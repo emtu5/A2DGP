@@ -7,20 +7,38 @@ public class BulletSpawner : MonoBehaviour
     // refactor to ScriptableObject for bullet pattern
     private Vector3 startPoint;
     private Vector3 moveDirection;
+    [SerializeField]
     private float moveSpeed = 6f;
     private float acceleration = 0f;
+    [SerializeField]
     private float angle = 0f;
-    private float firingRate;
+    [SerializeField]
+    private float angleStep = 0f;
+    [SerializeField]
+    private float firingRate = 1f;
+    [SerializeField]
     private float numberOfBullets = 6;
+    private float angleSpacing;
+    private float horizontalAngle = 0f;
+    private float timeBeforeShot = 0f;
     [SerializeField]
     private GameObject bulletPrefab;
 
+    void Awake()
+    {
+        startPoint = transform.position;
+        angleSpacing = 360f / numberOfBullets;
+    }
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startPoint = transform.position;
-        float angleSpacing = 360f / numberOfBullets;
+        
+    }
 
+    void FireBullets()
+    {
+        angleSpacing = 360f / numberOfBullets;
         for (int i = 0; i < numberOfBullets; i++)
         {
             float bulletDirXPosition = startPoint.x + Mathf.Cos((angle + i * angleSpacing) * Mathf.PI / 180f);
@@ -33,11 +51,21 @@ public class BulletSpawner : MonoBehaviour
             newBullet.SetMoveDirection(bulletDirection);
             newBullet.SetMoveSpeed(moveSpeed);
         }
+
+        angle += angleStep;
+        if (angle >= 360f || angle <= -360f)
+            angle = 0f;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        timeBeforeShot += Time.deltaTime;
+        if (timeBeforeShot >= firingRate)
+        {
+            FireBullets();
+            timeBeforeShot = 0;
+        }
     }
 }

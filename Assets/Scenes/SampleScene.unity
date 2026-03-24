@@ -384,6 +384,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a6cce5be0d39142b666519990c479d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
+  moveSpeed: 10
+  angle: 0
+  angleStep: 0
+  firingRate: 0.1
+  numberOfBullets: 15
   bulletPrefab: {fileID: 4259906884727998527, guid: 4f570f34c15bc64da9afd920396945d2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
