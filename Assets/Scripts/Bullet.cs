@@ -29,4 +29,9 @@ public class Bullet : MonoBehaviour
     {
         moveSpeed = speed;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
 }
