@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Destroy(gameObject, 1f);
+        
     }
 
     // Update is called once per frame
@@ -34,6 +34,11 @@ public class Bullet : MonoBehaviour
     public void SetAcceleration(float acc)
     {
         acceleration = acc;
+    }
+
+    public void SetLifetime(float life)
+    {
+        Destroy(gameObject, life);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -14,5 +14,7 @@ public class AttackPattern : ScriptableObject
     [SerializeField]
     public float firingRate = 1f;
     [SerializeField]
-    public float numberOfBullets = 6;
+    public float numberOfBullets = 6f;
+    [SerializeField]
+    public float lifetime = 1f;
 }
