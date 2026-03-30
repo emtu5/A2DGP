@@ -18,6 +18,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + moveDirection * moveSpeed * Time.deltaTime;
+        moveSpeed += acceleration * Time.deltaTime;
     }
 
     public void SetMoveDirection(Vector3 dir)
@@ -28,6 +29,11 @@ public class Bullet : MonoBehaviour
     public void SetMoveSpeed(float speed)
     {
         moveSpeed = speed;
+    }
+
+    public void SetAcceleration(float acc)
+    {
+        acceleration = acc;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

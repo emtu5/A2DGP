@@ -44,6 +44,7 @@ public class BulletSpawner : MonoBehaviour
             newBullet.transform.position = startPoint;
             newBullet.SetMoveDirection(bulletDirection);
             newBullet.SetMoveSpeed(pattern.moveSpeed);
+            newBullet.SetAcceleration(pattern.acceleration);
         }
 
         currentAngle = (360f + currentAngle + pattern.angleStep) % 360f;

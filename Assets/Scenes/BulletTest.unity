@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
   currentAngle: 0
   bulletPrefab: {fileID: 3432329555345726554, guid: 4f570f34c15bc64da9afd920396945d2, type: 3}
-  pattern: {fileID: 11400000, guid: eb68f4263b68d12a39dd516b81023fc2, type: 2}
+  pattern: {fileID: 11400000, guid: 88640c3052c56b45087389fbdc8165b6, type: 2}
 --- !u!4 &1346988774
 Transform:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ Transform:
   m_GameObject: {fileID: 2117432639}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.94, y: 2.8, z: 0}
+  m_LocalPosition: {x: 4.82, y: 2.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
