@@ -7,27 +7,20 @@ public class BulletSpawner : MonoBehaviour
     // refactor to ScriptableObject for bullet pattern
     private Vector3 startPoint;
     private Vector3 moveDirection;
-    [SerializeField]
-    private float moveSpeed = 6f;
-    private float acceleration = 0f;
-    [SerializeField]
-    private float angle = 0f;
-    [SerializeField]
-    private float angleStep = 0f;
-    [SerializeField]
-    private float firingRate = 1f;
-    [SerializeField]
-    private float numberOfBullets = 6;
     private float angleSpacing;
-    private float horizontalAngle = 0f;
+    [SerializeField]
+    private float currentAngle = 0f;
     private float timeBeforeShot = 0f;
     [SerializeField]
     private GameObject bulletPrefab;
+    [SerializeField]
+    private AttackPattern pattern;
 
     void Awake()
     {
         startPoint = transform.position;
-        angleSpacing = 360f / numberOfBullets;
+        angleSpacing = 360f / pattern.numberOfBullets;
+        currentAngle = pattern.startingAngle;
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,23 +31,22 @@ public class BulletSpawner : MonoBehaviour
 
     void FireBullets()
     {
-        angleSpacing = 360f / numberOfBullets;
-        for (int i = 0; i < numberOfBullets; i++)
+        startPoint = transform.position;
+        angleSpacing = 360f / pattern.numberOfBullets;
+        for (int i = 0; i < pattern.numberOfBullets; i++)
         {
-            float bulletDirXPosition = startPoint.x + Mathf.Cos((angle + i * angleSpacing) * Mathf.PI / 180f);
-            float bulletDirYPosition = startPoint.y + Mathf.Sin((angle + i * angleSpacing) * Mathf.PI / 180f);
+            float bulletDirXPosition = startPoint.x + Mathf.Cos((currentAngle + i * angleSpacing) * Mathf.PI / 180f);
+            float bulletDirYPosition = startPoint.y + Mathf.Sin((currentAngle + i * angleSpacing) * Mathf.PI / 180f);
             Vector3 newPositionVector = new Vector3(bulletDirXPosition, bulletDirYPosition, 0);
             Vector3 bulletDirection = (newPositionVector - startPoint).normalized;
 
             Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
             newBullet.transform.position = startPoint;
             newBullet.SetMoveDirection(bulletDirection);
-            newBullet.SetMoveSpeed(moveSpeed);
+            newBullet.SetMoveSpeed(pattern.moveSpeed);
         }
 
-        angle += angleStep;
-        if (angle >= 360f || angle <= -360f)
-            angle = 0f;
+        currentAngle = (360f + currentAngle + pattern.angleStep) % 360f;
     }
 
 
@@ -62,7 +54,7 @@ public class BulletSpawner : MonoBehaviour
     void Update()
     {
         timeBeforeShot += Time.deltaTime;
-        if (timeBeforeShot >= firingRate)
+        if (timeBeforeShot >= pattern.firingRate)
         {
             FireBullets();
             timeBeforeShot = 0;
