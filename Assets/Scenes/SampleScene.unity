@@ -385,12 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a6cce5be0d39142b666519990c479d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
-  moveSpeed: 10
-  angle: 0
-  angleStep: 10
-  firingRate: 1
-  numberOfBullets: 3
+  currentAngle: 0
   bulletPrefab: {fileID: 3432329555345726554, guid: 4f570f34c15bc64da9afd920396945d2, type: 3}
+  pattern: {fileID: 0}
 --- !u!114 &645755197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +579,6 @@ GameObject:
   - component: {fileID: 1627439462}
   - component: {fileID: 1627439461}
   - component: {fileID: 1627439460}
-  - component: {fileID: 1627439464}
   - component: {fileID: 1627439465}
   m_Layer: 0
   m_Name: Player
@@ -738,19 +734,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1627439464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627439459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c06904aaa7de8b783bdbe8cbc9590b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
-  speed: 5
 --- !u!114 &1627439465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,12 +746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a6cce5be0d39142b666519990c479d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
-  moveSpeed: 6
-  angle: 0
-  angleStep: 10
-  firingRate: 0.2
-  numberOfBullets: 6
+  currentAngle: 0
   bulletPrefab: {fileID: 3432329555345726554, guid: 4f570f34c15bc64da9afd920396945d2, type: 3}
+  pattern: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

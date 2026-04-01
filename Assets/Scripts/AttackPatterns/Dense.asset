@@ -15,7 +15,7 @@ MonoBehaviour:
   moveSpeed: 3
   acceleration: 0
   startingAngle: 0
-  angleStep: 180
+  angleStep: 15
   firingRate: 0.5
   numberOfBullets: 12
   lifetime: 3

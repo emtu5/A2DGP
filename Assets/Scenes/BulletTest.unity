@@ -450,7 +450,6 @@ GameObject:
   - component: {fileID: 2117432644}
   - component: {fileID: 2117432643}
   - component: {fileID: 2117432642}
-  - component: {fileID: 2117432641}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -458,19 +457,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2117432641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117432639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c06904aaa7de8b783bdbe8cbc9590b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
-  speed: 5
 --- !u!61 &2117432642
 BoxCollider2D:
   m_ObjectHideFlags: 0
