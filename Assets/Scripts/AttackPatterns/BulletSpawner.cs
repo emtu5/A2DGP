@@ -62,4 +62,9 @@ public class BulletSpawner : MonoBehaviour
             timeBeforeShot = 0;
         }
     }
+
+    public void SetAttackPattern(AttackPattern pat)
+    {
+        pattern = pat;
+    }
 }
