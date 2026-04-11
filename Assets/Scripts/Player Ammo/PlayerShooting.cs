@@ -13,17 +13,12 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouse.z = 0;
+
+            Vector2 dir = (mouse - transform.position).normalized;
+
+            playerAmmo.Shoot(dir);
         }
-    }
-
-    void Shoot()
-    {
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = 0f;
-
-        Vector2 direction = (mouseWorldPos - playerAmmo.firePoint.position).normalized;
-
-        playerAmmo.Shoot(direction);
     }
 }
