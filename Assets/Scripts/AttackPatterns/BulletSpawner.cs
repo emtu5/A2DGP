@@ -16,6 +16,8 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField]
     private AttackPattern pattern;
 
+     public AttackPattern Pattern => pattern;
+
     void Awake()
     {
         startPoint = transform.position;
@@ -29,7 +31,7 @@ public class BulletSpawner : MonoBehaviour
         
     }
 
-    void FireBullets()
+    public void FireBullets()
     {
         startPoint = transform.position;
         angleSpacing = 360f / pattern.numberOfBullets;
@@ -53,13 +55,5 @@ public class BulletSpawner : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
-    {
-        timeBeforeShot += Time.deltaTime;
-        if (timeBeforeShot >= pattern.firingRate)
-        {
-            FireBullets();
-            timeBeforeShot = 0;
-        }
-    }
+ 
 }

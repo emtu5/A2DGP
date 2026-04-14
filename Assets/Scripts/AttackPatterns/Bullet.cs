@@ -45,4 +45,9 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    internal void Init(Vector2 dir, float bulletSpeed, float bulletLifetime)
+    {
+        throw new NotImplementedException();
+    }
 }
