@@ -15,6 +15,8 @@ public class BulletSpawner : MonoBehaviour
     private GameObject bulletPrefab;
     [SerializeField]
     private AttackPattern pattern;
+    [SerializeField]
+    private ObjectPool bulletPool;
 
     void Awake()
     {
@@ -40,12 +42,15 @@ public class BulletSpawner : MonoBehaviour
             Vector3 newPositionVector = new Vector3(bulletDirXPosition, bulletDirYPosition, 0);
             Vector3 bulletDirection = (newPositionVector - startPoint).normalized;
 
-            Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
+            // Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
+            GameObject bulletObj = bulletPool.GetPooledObject().gameObject;
+            Bullet newBullet = bulletObj.GetComponent<Bullet>();
             newBullet.transform.position = startPoint;
             newBullet.SetMoveDirection(bulletDirection);
             newBullet.SetMoveSpeed(pattern.moveSpeed);
             newBullet.SetAcceleration(pattern.acceleration);
             newBullet.SetLifetime(pattern.lifetime);
+            newBullet.StartDeactivating();
         }
 
         currentAngle = (360f + currentAngle + pattern.angleStep) % 360f;
@@ -61,5 +66,10 @@ public class BulletSpawner : MonoBehaviour
             FireBullets();
             timeBeforeShot = 0;
         }
+    }
+
+    public void SetAttackPattern(AttackPattern pat)
+    {
+        pattern = pat;
     }
 }
