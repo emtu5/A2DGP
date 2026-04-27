@@ -15,6 +15,7 @@ public class AttackManager : MonoBehaviour
     {
         bulletSpawner = GetComponent<BulletSpawner>();
         attackBank = GetComponent<AttackBank>();
+        bulletSpawner.SetAttackPattern(attackBank.GetRandomPattern());
     }
 
     // Update is called once per frame
