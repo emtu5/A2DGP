@@ -67,4 +67,9 @@ public class Bullet : MonoBehaviour
         pooledObject.Release();
         gameObject.SetActive(false);
     }
+
+    internal void Init(Vector2 dir, float bulletSpeed, float bulletLifetime)
+    {
+        throw new NotImplementedException();
+    }
 }

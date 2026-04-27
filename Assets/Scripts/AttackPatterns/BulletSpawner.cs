@@ -18,6 +18,8 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField]
     private ObjectPool bulletPool;
 
+     public AttackPattern Pattern => pattern;
+
     void Awake()
     {
         startPoint = transform.position;
@@ -31,7 +33,7 @@ public class BulletSpawner : MonoBehaviour
         
     }
 
-    void FireBullets()
+    public void FireBullets()
     {
         startPoint = transform.position;
         angleSpacing = 360f / pattern.numberOfBullets;
