@@ -18,25 +18,25 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField]
     private ObjectPool bulletPool;
 
-     public AttackPattern Pattern => pattern;
-
+    public AttackPattern Pattern => pattern;
+    
     void Awake()
     {
         startPoint = transform.position;
         angleSpacing = 360f / pattern.numberOfBullets;
         currentAngle = pattern.startingAngle;
     }
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+   
     }
 
     public void FireBullets()
     {
         startPoint = transform.position;
-        angleSpacing = 360f / pattern.numberOfBullets;
+        angleSpacing = 360f / pattern.numberOfBullets;  
         for (int i = 0; i < pattern.numberOfBullets; i++)
         {
             float bulletDirXPosition = startPoint.x + Mathf.Cos((currentAngle + i * angleSpacing) * Mathf.PI / 180f);
@@ -62,12 +62,12 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeBeforeShot += Time.deltaTime;
-        if (timeBeforeShot >= pattern.firingRate)
-        {
-            FireBullets();
-            timeBeforeShot = 0;
-        }
+        // timeBeforeShot += Time.deltaTime;
+        // if (timeBeforeShot >= pattern.firingRate)
+        // {
+        //     FireBullets();
+        //     timeBeforeShot = 0;
+        // }
     }
 
     public void SetAttackPattern(AttackPattern pat)
