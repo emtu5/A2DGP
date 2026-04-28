@@ -4,9 +4,17 @@ public class EnemyStateMachine : MonoBehaviour
     private IEnemyState currentState;
     public BulletSpawner bulletSpawner;
     private Rigidbody2D rb2D; 
+    private SpriteRenderer spriteRenderer;
+
+    [Header("Teleport Bounds")]
+    public float minX = -8f;
+    public float maxX = 8f;
+    public float minY = -4f;
+    public float maxY = 4f;
     
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         
         rb2D = GetComponent<Rigidbody2D>();
         
@@ -69,4 +77,21 @@ public class EnemyStateMachine : MonoBehaviour
         
         Debug.Log("Movement " + (enabled ? "ENABLED" : "DISABLED"));
     }
+
+        public Vector2 GetRandomTeleportPosition()
+    {
+        float x = Random.Range(minX, maxX);
+        float y = Random.Range(minY, maxY);
+        return new Vector2(x, y);
+    }
+
+     public System.Collections.IEnumerator TeleportFlash()
+    {
+        if (spriteRenderer == null) yield break;
+        Color original = spriteRenderer.color;
+        spriteRenderer.color =new Color(0.686f, 0f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        spriteRenderer.color = original;
+    
+}
 }
