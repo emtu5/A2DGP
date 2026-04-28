@@ -1,5 +1,6 @@
 using System;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
@@ -26,8 +27,6 @@ public class BulletSpawner : MonoBehaviour
         angleSpacing = 360f / pattern.numberOfBullets;
         currentAngle = pattern.startingAngle;
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
    
@@ -45,9 +44,11 @@ public class BulletSpawner : MonoBehaviour
             Vector3 bulletDirection = (newPositionVector - startPoint).normalized;
 
             // Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
+
+            float spawnOffset = 0.6f;
             GameObject bulletObj = bulletPool.GetPooledObject().gameObject;
             Bullet newBullet = bulletObj.GetComponent<Bullet>();
-            newBullet.transform.position = startPoint;
+            newBullet.transform.position = startPoint + bulletDirection * spawnOffset;
             newBullet.SetMoveDirection(bulletDirection);
             newBullet.SetMoveSpeed(pattern.moveSpeed);
             newBullet.SetAcceleration(pattern.acceleration);
