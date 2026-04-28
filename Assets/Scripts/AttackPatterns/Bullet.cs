@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Bullet : MonoBehaviour
 {
@@ -11,13 +10,14 @@ public class Bullet : MonoBehaviour
     private float lifespan = 0f;
     private PooledObject pooledObject;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Damage Settings")]
+    [SerializeField] private float damage = 10f;
+
     void Start()
     {
         pooledObject = GetComponent<PooledObject>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = transform.position + moveDirection * moveSpeed * Time.deltaTime;
@@ -46,6 +46,21 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Player hit by bullet. Damage: " + damage);
+
+            HealthSystem playerHealth = collision.GetComponentInParent<HealthSystem>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+
+            Deactivate();
+            return;
+        }
+
         Deactivate();
     }
 
@@ -53,13 +68,13 @@ public class Bullet : MonoBehaviour
     {
         StartCoroutine(DeactivateTimer());
     }
-    
+
     IEnumerator DeactivateTimer()
     {
         yield return new WaitForSeconds(lifespan);
         Deactivate();
     }
-    
+
     void Deactivate()
     {
         moveDirection = Vector3.zero;
@@ -70,6 +85,10 @@ public class Bullet : MonoBehaviour
 
     internal void Init(Vector2 dir, float bulletSpeed, float bulletLifetime)
     {
-        throw new NotImplementedException();
+        moveDirection = dir.normalized;
+        moveSpeed = bulletSpeed;
+        lifespan = bulletLifetime;
+
+        StartDeactivating();
     }
 }

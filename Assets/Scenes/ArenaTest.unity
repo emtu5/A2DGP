@@ -1654,6 +1654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c274bbd479fae47a367816a8e52d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStateMachine
+  bulletSpawner: {fileID: 0}
 --- !u!70 &523316138
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1732,7 +1733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
   maxHealth: 100
   currentHealth: 0
-  damageAmount: 10
+  damageAmount: 5
   damageKey: 106
 --- !u!1 &544567667
 GameObject:
@@ -2724,7 +2725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
   maxHealth: 100
   currentHealth: 0
-  damageAmount: 10
+  damageAmount: 5
   damageKey: 104
 --- !u!1 &1036061136
 GameObject:
