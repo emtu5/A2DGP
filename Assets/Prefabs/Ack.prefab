@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 367174236900693981}
   m_Layer: 6
   m_Name: Ack
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   bulletSpawner: {fileID: 626657276263069787}
+  minX: -8
+  maxX: 8
+  minY: -4
+  maxY: 4
 --- !u!114 &7516069043324665818
 MonoBehaviour:
   m_ObjectHideFlags: 0

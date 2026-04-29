@@ -16,7 +16,7 @@ public class ArrowPool : MonoBehaviour
 
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject obj = Instantiate(arrowPrefab);
+            GameObject obj = Instantiate(arrowPrefab, transform);
             obj.SetActive(false);
             pool.Enqueue(obj);
         }
@@ -32,7 +32,7 @@ public class ArrowPool : MonoBehaviour
         }
         else
         {
-            return Instantiate(arrowPrefab);
+            return Instantiate(arrowPrefab, transform);
         }
     }
 

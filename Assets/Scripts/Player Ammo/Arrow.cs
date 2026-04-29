@@ -41,6 +41,9 @@ public class Arrow : MonoBehaviour
             data.effect.Apply(collision.gameObject, data.damage);
         }
 
+        HealthSystem enemySystem = collision.GetComponent<HealthSystem>();
+        enemySystem?.TakeDamage(data.damage);
+
         ReturnToPool();
     }
 
