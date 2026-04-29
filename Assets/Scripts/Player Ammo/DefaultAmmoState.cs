@@ -4,7 +4,7 @@ public class DefaultAmmoState : IAmmoState
 {
     public void Enter(PlayerAmmo player)
     {
-        Debug.Log("Default Ammo Active (Infinite)");
+        player.UpdateAmmoUI(AmmoType.Fire, 0);
     }
 
     public void Exit(PlayerAmmo player) { }

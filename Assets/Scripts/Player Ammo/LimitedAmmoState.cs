@@ -3,38 +3,44 @@ using UnityEngine;
 public class LimitedAmmoState : IAmmoState
 {
     private AmmoData ammoData;
-    private int currentAmmo;
+    private int ammoLeft;
 
-    public LimitedAmmoState(AmmoData data)
+    public LimitedAmmoState(AmmoData data, int amount)
     {
         ammoData = data;
-        currentAmmo = data.ammoAmount;
+        ammoLeft = amount;
     }
 
     public void Enter(PlayerAmmo player)
     {
-        Debug.Log("Entered: " + ammoData.ammoType + " | Ammo: " + currentAmmo);
+        player.UpdateAmmoUI(ammoData.ammoType, ammoLeft);
     }
 
     public void Exit(PlayerAmmo player) { }
 
     public void Shoot(PlayerAmmo player, Vector2 direction)
     {
-        if (currentAmmo <= 0)
+        if (ammoLeft <= 0)
         {
-            player.ChangeState(new DefaultAmmoState());
+            player.OnAmmoFinished();
             return;
         }
 
+        if (!player.TryConsumeAmmo(ammoData.ammoType))
+        {
+            player.OnAmmoFinished();
+            return;
+        }
+
+        ammoLeft--;
+
         player.SpawnArrow(ammoData, direction);
 
-        currentAmmo--;
+        player.UpdateAmmoUI(ammoData.ammoType, ammoLeft);
 
-        Debug.Log(ammoData.ammoType + " left: " + currentAmmo);
-
-        if (currentAmmo <= 0)
+        if (ammoLeft <= 0)
         {
-            player.ChangeState(new DefaultAmmoState());
+            player.OnAmmoFinished();
         }
     }
 }

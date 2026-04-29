@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce58bcfa169fc744b1a9752351685d3, type: 3}
+  m_Name: Ammo Library
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoLibrary
+  entries:
+  - type: 3
+    data: {fileID: 11400000, guid: 0d44d899976728b40b825464b2bc342c, type: 2}
+  - type: 0
+    data: {fileID: 11400000, guid: 1292036e219c8204daef24a4f694b00f, type: 2}
+  - type: 2
+    data: {fileID: 11400000, guid: 100d96b553342f748bed9811f72c1041, type: 2}
+  - type: 1
+    data: {fileID: 11400000, guid: af68aa0514ddd8f40ab9b6fc24e6dfd9, type: 2}

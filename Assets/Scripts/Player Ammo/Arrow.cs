@@ -32,41 +32,16 @@ public class Arrow : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (!collision.CompareTag("Enemy")) return;
+
+        Debug.Log("Hit enemy with " + data.ammoType);
+
+        if (data.effect != null)
         {
-            Debug.Log("Hit enemy with " + data.ammoType + " arrow");
-            Debug.Log("Damage: " + data.damage);
-
-            HealthSystem enemyHealth = collision.GetComponent<HealthSystem>();
-            switch (data.ammoType)
-            {
-                case AmmoType.Fire:
-                    Debug.Log("Fire Effect: High damage applied");
-                    enemyHealth.TakeDamage(data.damage);
-                    break;
-
-                case AmmoType.Poison:
-                    Debug.Log("Poison Effect: Damage over time applied");
-                    enemyHealth.TakeDamage(data.damage);
-                    break;
-
-                case AmmoType.Ice:
-                    Debug.Log("Ice Effect: Enemy slowed");
-                    enemyHealth.TakeDamage(data.damage);
-                    break;
-
-                case AmmoType.Default:
-                    Debug.Log("Default arrow: Normal damage");
-                    enemyHealth.TakeDamage(data.damage);
-                    break;
-
-                default:
-                    Debug.Log("Unknown ammo type");
-                    break;
-            }
-
-            ReturnToPool();
+            data.effect.Apply(collision.gameObject, data.damage);
         }
+
+        ReturnToPool();
     }
 
     void ReturnToPool()

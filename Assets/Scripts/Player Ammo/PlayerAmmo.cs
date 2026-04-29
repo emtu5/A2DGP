@@ -1,48 +1,80 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAmmo : MonoBehaviour
 {
-    public GameObject arrowPrefab;
     public Transform firePoint;
 
     public AmmoData defaultAmmo;
-    public AmmoData fireAmmo;
-    public AmmoData iceAmmo;
-    public AmmoData poisonAmmo;
-
+    public AmmoLibrary ammoLibrary;
+    public AmmoUI ammoUI;
 
     private IAmmoState currentState;
+    private AmmoInventory inventory;
+
+    private Queue<AmmoQueueItem> ammoQueue = new Queue<AmmoQueueItem>();
+
+    private AmmoData currentAmmoData;
+    private int currentAmmoLeft;
 
     void Start()
     {
+        inventory = new AmmoInventory(0);
+
         currentState = new DefaultAmmoState();
         currentState.Enter(this);
+
+        ammoUI.SetDefault();
+
+        Debug.Log("PlayerAmmo STARTED");
     }
 
     void Update()
     {
-        // TEST SWITCHES
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ChangeState(new LimitedAmmoState(defaultAmmo));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ChangeState(new LimitedAmmoState(fireAmmo));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ChangeState(new LimitedAmmoState(iceAmmo));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            ChangeState(new LimitedAmmoState(poisonAmmo));
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) AddAmmoPickup(AmmoType.Fire, 5);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) AddAmmoPickup(AmmoType.Ice, 5);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) AddAmmoPickup(AmmoType.Poison, 5);
     }
 
-    public void Shoot(Vector2 direction)
+    public void AddAmmoPickup(AmmoType type, int amount)
     {
-        currentState.Shoot(this, direction);
+        Debug.Log($"Pickup: {type} x{amount}");
+
+        inventory.Add(type, amount);
+
+        AmmoData data = ammoLibrary.GetAmmo(type);
+        if (data == null)
+        {
+            Debug.LogError("AmmoData missing: " + type);
+            return;
+        }
+
+        ammoQueue.Enqueue(new AmmoQueueItem(data, amount));
+
+        ammoUI.UpdateQueue(ammoQueue);
+
+        if (currentState is DefaultAmmoState)
+            ActivateNextAmmo();
+    }
+
+    private void ActivateNextAmmo()
+    {
+        if (ammoQueue.Count == 0)
+        {
+            ChangeState(new DefaultAmmoState());
+            ammoUI.SetDefault();
+            return;
+        }
+
+        AmmoQueueItem next = ammoQueue.Dequeue();
+
+        currentAmmoData = next.data;
+        currentAmmoLeft = next.amount;
+
+        ammoUI.UpdateQueue(ammoQueue);
+
+        ChangeState(new LimitedAmmoState(next.data, next.amount));
+        UpdateAmmoUI(next.data.ammoType, next.amount);
     }
 
     public void ChangeState(IAmmoState newState)
@@ -50,6 +82,16 @@ public class PlayerAmmo : MonoBehaviour
         currentState.Exit(this);
         currentState = newState;
         currentState.Enter(this);
+    }
+
+    public void Shoot(Vector2 direction)
+    {
+        currentState.Shoot(this, direction);
+    }
+
+    public void OnAmmoFinished()
+    {
+        ActivateNextAmmo();
     }
 
     public void SpawnArrow(AmmoData data, Vector2 direction)
@@ -62,5 +104,35 @@ public class PlayerAmmo : MonoBehaviour
 
         Arrow arrow = arrowObj.GetComponent<Arrow>();
         arrow.Initialize(data, direction);
+    }
+
+    public void UpdateAmmoUI(AmmoType type, int amount)
+    {
+        AmmoData data = ammoLibrary.GetAmmo(type);
+
+        if (ammoUI != null && data != null)
+        {
+            ammoUI.UpdateUI(data, amount);
+        }
+    }
+
+    public void UpdateAmmoAfterShot()
+    {
+        currentAmmoLeft--;
+
+        if (currentAmmoData != null)
+        {
+            UpdateAmmoUI(currentAmmoData.ammoType, currentAmmoLeft);
+        }
+    }
+
+    public int GetAmmoCount(AmmoType type)
+    {
+        return inventory.Get(type);
+    }
+
+    public bool TryConsumeAmmo(AmmoType type)
+    {
+        return inventory.Consume(type);
     }
 }
