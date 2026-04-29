@@ -2,18 +2,20 @@ using UnityEngine;
 
 public class AmmoPickup : MonoBehaviour
 {
-    public AmmoData ammoData;
+    public AmmoType ammoType;
+    public int amount = 5;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (!collision.CompareTag("Player"))
+            return;
 
-        PlayerAmmo playerAmmo = collision.GetComponent<PlayerAmmo>();
+        PlayerAmmo player = collision.GetComponent<PlayerAmmo>();
 
-        if (playerAmmo != null)
-        {
-            playerAmmo.ChangeState(new LimitedAmmoState(ammoData));
-        }
+        if (player == null)
+            return;
+
+        player.AddAmmoPickup(ammoType, amount);
 
         Destroy(gameObject);
     }

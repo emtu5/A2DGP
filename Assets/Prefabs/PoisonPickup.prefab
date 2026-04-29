@@ -141,4 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f387bddf9f39f543810bce4727a7732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmmoPickup
-  ammoData: {fileID: 11400000, guid: af68aa0514ddd8f40ab9b6fc24e6dfd9, type: 2}
+  ammoType: 1
+  amount: 8
