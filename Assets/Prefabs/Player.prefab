@@ -226,7 +226,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.47, y: 4.31}
+  m_Size: {x: 0.88, y: 2.49}
   m_Direction: 0
 --- !u!114 &40254408945898134
 MonoBehaviour:
@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74fdb25e48b757446adcf4721569b1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+  cooldown: 0.2
 --- !u!114 &1352362818237323977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,9 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90cd33ac9f4057243851b28f2f1caedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAmmo
-  arrowPrefab: {fileID: 7671170886847500176, guid: ded85d85d84819246acd07128a927dd0, type: 3}
   firePoint: {fileID: 4305941517494283868}
   defaultAmmo: {fileID: 11400000, guid: 0d44d899976728b40b825464b2bc342c, type: 2}
-  fireAmmo: {fileID: 11400000, guid: 1292036e219c8204daef24a4f694b00f, type: 2}
-  iceAmmo: {fileID: 11400000, guid: 100d96b553342f748bed9811f72c1041, type: 2}
-  poisonAmmo: {fileID: 11400000, guid: af68aa0514ddd8f40ab9b6fc24e6dfd9, type: 2}
+  ammoLibrary: {fileID: 0}
+  ammoUI: {fileID: 0}
