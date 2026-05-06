@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 1a4fea2907b165e4bac638b6ed1cea60
+guid: a4eadb29fc821f223b06a10517ca7a60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 921885731248053203
-    second: BulletAck_Attempt1_0
+      213: 2697499868052367263
+    second: idle-sheet_0
+  - first:
+      213: 3588247721943993570
+    second: idle-sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BulletAck_Attempt1_0
+      name: idle-sheet_0
       rect:
         serializedVersion: 2
-        x: 1479
-        y: 927
-        width: 1447
-        height: 757
+        x: 95
+        y: 10
+        width: 315
+        height: 665
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3db9a8e20323bcc00800000000000000
-      internalID: 921885731248053203
+      spriteID: f97ace886d17f6520800000000000000
+      internalID: 2697499868052367263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 10
+        width: 315
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec8390ba440cc130800000000000000
+      internalID: 3588247721943993570
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 447af3161a01b7aa3981fe532efa7897
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,13 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      BulletAck_Attempt1_0: 921885731248053203
+      idle-sheet_0: 2697499868052367263
+      idle-sheet_1: 3588247721943993570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

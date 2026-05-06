@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 367174236900693981}
   m_Layer: 6
   m_Name: Ack
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 15d2d85a51766cc44bc0f6d78fba40b6, type: 3}
+  m_Sprite: {fileID: 2697499868052367263, guid: a4eadb29fc821f223b06a10517ca7a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,6 +110,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   bulletSpawner: {fileID: 626657276263069787}
+  minX: -8
+  maxX: 8
+  minY: -4
+  maxY: 4
 --- !u!114 &7516069043324665818
 MonoBehaviour:
   m_ObjectHideFlags: 0

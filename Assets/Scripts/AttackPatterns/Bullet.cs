@@ -58,10 +58,7 @@ public class Bullet : MonoBehaviour
             }
 
             Deactivate();
-            return;
         }
-
-        Deactivate();
     }
 
     public void StartDeactivating()

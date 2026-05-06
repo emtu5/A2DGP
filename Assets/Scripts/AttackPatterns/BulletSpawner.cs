@@ -49,6 +49,7 @@ public class BulletSpawner : MonoBehaviour
             GameObject bulletObj = bulletPool.GetPooledObject().gameObject;
             Bullet newBullet = bulletObj.GetComponent<Bullet>();
             newBullet.transform.position = startPoint + bulletDirection * spawnOffset;
+            newBullet.transform.eulerAngles = new Vector3(0, 0, currentAngle + i * angleSpacing);
             newBullet.SetMoveDirection(bulletDirection);
             newBullet.SetMoveSpeed(pattern.moveSpeed);
             newBullet.SetAcceleration(pattern.acceleration);
