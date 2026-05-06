@@ -93,5 +93,13 @@ public class EnemyStateMachine : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         spriteRenderer.color = original;
     
-}
+    }
+
+    public void SetSpeedMultiplier(float multiplier)
+    {
+        if (currentState is MovingState movingState)
+        {
+            movingState.SetSpeedMultiplier(multiplier);
+        }
+    }
 }
