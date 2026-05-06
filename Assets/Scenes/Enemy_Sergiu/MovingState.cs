@@ -9,6 +9,7 @@ public class MovingState : IEnemyState
     private float changeDirectionTime = 2f;
     private float moveDuration = 3f;   // how long enemy moves before shooting
     private float moveSpeed = 2f;
+    private float speedMultiplier = 1f;
 
     public void Enter(EnemyStateMachine enemy)
     {
@@ -38,7 +39,7 @@ public class MovingState : IEnemyState
         }
 
         // Move enemy
-        enemy.transform.Translate(movementDirection * moveSpeed * Time.deltaTime);
+        enemy.transform.Translate(movementDirection * moveSpeed * speedMultiplier * Time.deltaTime);
     }
 
     public void Exit(EnemyStateMachine enemy)
@@ -50,5 +51,9 @@ public class MovingState : IEnemyState
     {
         movementDirection = Random.insideUnitCircle.normalized;
         changeDirectionTimer = changeDirectionTime;
+    }
+    public void SetSpeedMultiplier(float multiplier)
+    {
+        speedMultiplier = multiplier;
     }
 }

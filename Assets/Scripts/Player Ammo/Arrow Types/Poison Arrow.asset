@@ -15,6 +15,4 @@ MonoBehaviour:
   ammoType: 1
   damage: 5
   speed: 10
-  ammoAmount: 5
-  slowEffect: 0
-  poisonEffect: 1
+  effect: {fileID: 11400000, guid: e4dd67a574d0e3442ae23990cc49c3bd, type: 2}
