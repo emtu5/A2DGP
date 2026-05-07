@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 1566927781881692103}
   - component: {fileID: 40254408945898134}
   - component: {fileID: 1352362818237323977}
+  - component: {fileID: 7295032176597089683}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -204,10 +205,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 254
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -257,3 +258,40 @@ MonoBehaviour:
   defaultAmmo: {fileID: 11400000, guid: 0d44d899976728b40b825464b2bc342c, type: 2}
   ammoLibrary: {fileID: 0}
   ammoUI: {fileID: 0}
+--- !u!70 &7295032176597089683
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056831514463741083}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -1.94}
+  m_Size: {x: 1.47, y: 0.43}
+  m_Direction: 1
