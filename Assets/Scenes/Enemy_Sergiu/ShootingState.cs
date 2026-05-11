@@ -11,6 +11,8 @@ public class ShootingState : IEnemyState
     {
         shootTimer = 0f;
         timeInState = 0f;
+        enemy.animator.SetBool("IsMoving", false);
+        enemy.animator.SetBool("IsAttacking", true);
         Debug.Log("Entered Shooting State");
     }
 

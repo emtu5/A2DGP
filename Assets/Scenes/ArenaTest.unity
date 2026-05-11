@@ -2512,7 +2512,7 @@ PrefabInstance:
     - target: {fileID: 3054808412875267065, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8300046597307353673, guid: a178375b4fef9c9498c0f2d8ea943875, type: 3}
+      objectReference: {fileID: 2697499868052367263, guid: a4eadb29fc821f223b06a10517ca7a60, type: 3}
     - target: {fileID: 4762140164092868181, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: patterns.Array.size
       value: 2
@@ -2537,6 +2537,18 @@ PrefabInstance:
       propertyPath: minY
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 8697588784327736372, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1568334622746470174}
+    - target: {fileID: 8697588784327736372, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1343395282}
+    - target: {fileID: 8697588784327736372, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: aanimator
+      value: 
+      objectReference: {fileID: 1343395282}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2544,6 +2556,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5588223453359894772, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1343395273}
+    - targetCorrespondingSourceObject: {fileID: 5588223453359894772, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1343395282}
   m_SourcePrefab: {fileID: 100100000, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
 --- !u!1 &1036061136
 GameObject:
@@ -3069,10 +3084,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63445601f128243439a117e43b375a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  maxHealth: 1500
+  maxHealth: 100
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+--- !u!95 &1343395282
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343395272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d14fc9b26f7ec344d8e302526adbffc4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1353324887
 GameObject:
   m_ObjectHideFlags: 0

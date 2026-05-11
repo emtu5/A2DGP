@@ -6,4 +6,5 @@ public class MenuButtons : MonoBehaviour
     public void Settings() => GameEvents.SettingsPressed();
     public void Back() => GameEvents.BackPressed();
     public void Quit() => GameEvents.QuitPressed();
+    public void MainMenu() => GameEvents.MainMenu();
 }

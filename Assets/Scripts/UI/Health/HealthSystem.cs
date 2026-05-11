@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -34,11 +35,30 @@ public class HealthSystem : MonoBehaviour
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
+        
+
         NotifyHealthChanged();
+
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     private void NotifyHealthChanged()
     {
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
+
+        void Die()
+    {
+        if (CompareTag("Player"))
+        {
+            SceneManager.LoadScene("LoseScene");   
+        }
+        else if (CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene("Win_Scene");   
+        }
     }
 }
