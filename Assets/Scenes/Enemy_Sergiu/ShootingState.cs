@@ -24,7 +24,7 @@ public class ShootingState : IEnemyState
         // Leave shooting state after some seconds
         if (timeInState >= stateDuration)
         {
-            enemy.ChangeState(new TeleportState());
+            enemy.ChangeState(new MovingState());
             return;
         }
 

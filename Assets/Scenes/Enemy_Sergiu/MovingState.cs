@@ -24,7 +24,7 @@ public class MovingState : IEnemyState
 
     public void Update(EnemyStateMachine enemy)
     {
-        // COUNT total time in moving state
+
         moveTimer += Time.deltaTime;
 
         // After some seconds → switch to shooting
