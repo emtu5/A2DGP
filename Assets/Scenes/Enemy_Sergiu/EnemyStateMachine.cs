@@ -107,4 +107,12 @@ public class EnemyStateMachine : MonoBehaviour
             movingState.SetSpeedMultiplier(multiplier);
         }
     }
+
+    public void SetFiringSpeedMultiplier(float multiplier)
+    {
+        if (currentState is ShootingState shootingState)
+        {
+            shootingState.SetFiringSpeedMultiplier(multiplier);
+        }
+    }
 }
