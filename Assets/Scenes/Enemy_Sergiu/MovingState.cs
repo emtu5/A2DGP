@@ -11,17 +11,20 @@ public class MovingState : IEnemyState
     private float moveSpeed = 2f;
     private float speedMultiplier = 1f;
 
+
     public void Enter(EnemyStateMachine enemy)
     {
         ChooseNewDirection();
         changeDirectionTimer = changeDirectionTime;
         moveTimer = 0f;
+        enemy.animator.SetBool("IsMoving", true);
+        enemy.animator.SetBool("IsAttacking", false);
         Debug.Log("Entered Moving State");
     }
 
     public void Update(EnemyStateMachine enemy)
     {
-        // COUNT total time in moving state
+
         moveTimer += Time.deltaTime;
 
         // After some seconds → switch to shooting
@@ -40,6 +43,9 @@ public class MovingState : IEnemyState
 
         // Move enemy
         enemy.transform.Translate(movementDirection * moveSpeed * speedMultiplier * Time.deltaTime);
+
+        enemy.animator.SetFloat("MoveX", movementDirection.x);
+        enemy.animator.SetFloat("MoveY", movementDirection.y);
     }
 
     public void Exit(EnemyStateMachine enemy)

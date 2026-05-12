@@ -11,6 +11,8 @@ public class ShootingState : IEnemyState
     {
         shootTimer = 0f;
         timeInState = 0f;
+        enemy.animator.SetBool("IsMoving", false);
+        enemy.animator.SetBool("IsAttacking", true);
         Debug.Log("Entered Shooting State");
     }
 
@@ -22,7 +24,7 @@ public class ShootingState : IEnemyState
         // Leave shooting state after some seconds
         if (timeInState >= stateDuration)
         {
-            enemy.ChangeState(new TeleportState());
+            enemy.ChangeState(new MovingState());
             return;
         }
 

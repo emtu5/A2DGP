@@ -7,17 +7,19 @@ public class SceneLoader : MonoBehaviour
     {
         GameEvents.OnPlayPressed += LoadGame;
         GameEvents.OnQuitPressed += QuitGame;
+        GameEvents.OnMainMenu += MainMenu;
     }
 
     void OnDisable()
     {
         GameEvents.OnPlayPressed -= LoadGame;
         GameEvents.OnQuitPressed -= QuitGame;
+        GameEvents.OnMainMenu += MainMenu;
     }
 
     void LoadGame()
     {
-        SceneManager.LoadScene("Antonia");
+        SceneManager.LoadScene("ArenaTest");
     }
 
     void QuitGame()
@@ -25,4 +27,10 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game");
     }
+
+    void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

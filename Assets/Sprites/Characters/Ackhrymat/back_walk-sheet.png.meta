@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: a4eadb29fc821f223b06a10517ca7a60
+guid: fe0cb5e96e1e9a84db91136edc3ae5ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2697499868052367263
-    second: idle-sheet_0
+      213: 7487538468155011464
+    second: back_walk-sheet_0
   - first:
-      213: 3588247721943993570
-    second: idle-sheet_1
+      213: -5229568985773014901
+    second: back_walk-sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-sheet_0
+      name: back_walk-sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 700
+        x: 96
+        y: 13
+        width: 313
+        height: 674
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f97ace886d17f6520800000000000000
-      internalID: 2697499868052367263
+      spriteID: 881b37ce09419e760800000000000000
+      internalID: 7487538468155011464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-sheet_1
+      name: back_walk-sheet_1
       rect:
         serializedVersion: 2
-        x: 500
+        x: 596
         y: 0
-        width: 500
-        height: 700
+        width: 313
+        height: 674
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ec8390ba440cc130800000000000000
-      internalID: 3588247721943993570
+      spriteID: b80899207b6dc67b0800000000000000
+      internalID: -5229568985773014901
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 40381c4591e731e47ae67ab044b2c404
+    spriteID: f40e99580ab476a48922ae3bf052befa
     internalID: 0
     vertices: []
     indices: 
@@ -160,10 +160,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      idle-sheet_0: 2697499868052367263
-      idle-sheet_1: 3588247721943993570
+      back_walk-sheet_0: 7487538468155011464
+      back_walk-sheet_1: -5229568985773014901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

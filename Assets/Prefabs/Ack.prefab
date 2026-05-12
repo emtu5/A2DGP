@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 626657276263069787}
   - component: {fileID: 962544827023222795}
   - component: {fileID: 367174236900693981}
+  - component: {fileID: 1699600790831090896}
   m_Layer: 6
   m_Name: Ack
   m_TagString: Enemy
@@ -110,10 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   bulletSpawner: {fileID: 626657276263069787}
+  player: {fileID: 0}
   minX: -8
   maxX: 8
   minY: -4
   maxY: 4
+  animator: {fileID: 0}
 --- !u!114 &7516069043324665818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,3 +227,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!95 &1699600790831090896
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588223453359894772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d14fc9b26f7ec344d8e302526adbffc4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

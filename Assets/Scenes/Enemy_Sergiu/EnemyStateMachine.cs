@@ -5,16 +5,19 @@ public class EnemyStateMachine : MonoBehaviour
     public BulletSpawner bulletSpawner;
     private Rigidbody2D rb2D; 
     private SpriteRenderer spriteRenderer;
+    public Transform player;
 
     [Header("Teleport Bounds")]
     public float minX = -8f;
     public float maxX = 8f;
     public float minY = -4f;
     public float maxY = 4f;
+    public Animator animator;
     
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         
         rb2D = GetComponent<Rigidbody2D>();
         
@@ -38,6 +41,8 @@ public class EnemyStateMachine : MonoBehaviour
         
         Debug.Log("EnemyStateMachine initialized successfully on " + gameObject.name);
         ChangeState(new MovingState());
+
+         
     }
     
     void Update()
