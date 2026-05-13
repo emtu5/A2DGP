@@ -3232,17 +3232,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120306707}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1155816038}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -850, y: 450}
-  m_SizeDelta: {x: 64, y: 64}
+  m_AnchoredPosition: {x: -850, y: 451.8}
+  m_SizeDelta: {x: 61.4918, y: 22.2498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120306709
 MonoBehaviour:
@@ -5314,7 +5314,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021214993}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7391304, y: 1.7391304, z: 1.7391304}
   m_ConstrainProportionsScale: 0
@@ -5345,9 +5345,9 @@ MonoBehaviour:
   container: {fileID: 2021214993}
   queueContainer: {fileID: 90646721}
   queueIconPrefab: {fileID: 3597343313247225083, guid: 3912096196d47464482d84bd96cbe3c6, type: 3}
-  fireSprite: {fileID: -2559190936789288728, guid: ae259fce5c83bd581b624724fa468f3e, type: 3}
-  iceSprite: {fileID: -7184138408967707247, guid: ccb0cbb2c8c5fa319ae291e07bfd0d72, type: 3}
-  poisonSprite: {fileID: -6960903314270103029, guid: e3b06d1ae4901603b8383b18d48722a3, type: 3}
+  fireSprite: {fileID: -8878640824962185862, guid: 0d33a82d7f4649acea5eae9c912a0d23, type: 3}
+  iceSprite: {fileID: -7560284153744367771, guid: 0230741b32a7d98db8730c6402597b1f, type: 3}
+  poisonSprite: {fileID: -4347532159779508366, guid: 536d0687877ff1b4fbde42c0ec767714, type: 3}
 --- !u!114 &2021214996
 MonoBehaviour:
   m_ObjectHideFlags: 0
