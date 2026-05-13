@@ -4,12 +4,14 @@ public class Arrow : MonoBehaviour
 {
     private Rigidbody2D rb;
     private AmmoData data;
+    private SpriteRenderer spriteRenderer;
 
     public float lifetime = 3f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnEnable()
@@ -25,7 +27,8 @@ public class Arrow : MonoBehaviour
     public void Initialize(AmmoData ammoData, Vector2 direction)
     {
         data = ammoData;
-
+        spriteRenderer.sprite = data.sprite;
+        
         rb.linearVelocity = Vector2.zero;
         rb.linearVelocity = direction.normalized * data.speed;
     }
