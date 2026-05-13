@@ -9,7 +9,9 @@ public class TeleportState : IEnemyState
     public void Enter(EnemyStateMachine enemy)
     {
         timer = 0f;
+
         enemy.SetMovementEnabled(false);
+
         Debug.Log("Entered Teleport State - Preparing to teleport");
     }
 
@@ -19,10 +21,16 @@ public class TeleportState : IEnemyState
 
         if (timer >= teleportDelay)
         {
+            Object.FindFirstObjectByType<AudioManager>().PlaySFX(Object.FindFirstObjectByType<AudioManager>().enemyTeleportSound);
+
             Vector2 newPosition = enemy.GetRandomTeleportPosition();
+
             enemy.transform.position = newPosition;
+
             Debug.Log($"Teleported to {newPosition}");
+
             enemy.StartCoroutine(enemy.TeleportFlash());
+
             enemy.ChangeState(new MovingState());
         }
     }

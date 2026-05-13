@@ -10,6 +10,7 @@ public class MovingState : IEnemyState
     private float moveDuration = 3f;   // how long enemy moves before shooting
     private float moveSpeed = 2f;
     private float speedMultiplier = 1f;
+    private float footstepTimer;
 
 
     public void Enter(EnemyStateMachine enemy)
@@ -39,6 +40,18 @@ public class MovingState : IEnemyState
         if (changeDirectionTimer <= 0)
         {
             ChooseNewDirection();
+        }
+
+        footstepTimer -= Time.deltaTime;
+
+        if (footstepTimer <= 0f)
+        {
+            AudioManager audioManager =
+                Object.FindFirstObjectByType<AudioManager>();
+
+            audioManager.PlaySFX(audioManager.enemyFootstepSound);
+
+            footstepTimer = audioManager.enemyFootstepSound.length;
         }
 
         // Move enemy
