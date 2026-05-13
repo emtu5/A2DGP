@@ -16,3 +16,4 @@ MonoBehaviour:
   damage: 15
   speed: 5
   effect: {fileID: 11400000, guid: 2c1821f549f713c41bf942a50bcb4965, type: 2}
+  sprite: {fileID: -7560284153744367771, guid: 0230741b32a7d98db8730c6402597b1f, type: 3}

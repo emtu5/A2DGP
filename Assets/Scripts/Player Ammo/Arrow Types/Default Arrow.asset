@@ -15,6 +15,5 @@ MonoBehaviour:
   ammoType: 3
   damage: 10
   speed: 10
-  ammoAmount: 0
-  slowEffect: 0
-  poisonEffect: 0
+  effect: {fileID: 0}
+  sprite: {fileID: -4346244404228752641, guid: be0fba6161f4bc88189b15fdbb26b1e7, type: 3}

@@ -7,4 +7,5 @@ public class AmmoData : ScriptableObject
     public float damage;
     public float speed;
     public AmmoEffect effect;
+    public Sprite sprite;
 }
