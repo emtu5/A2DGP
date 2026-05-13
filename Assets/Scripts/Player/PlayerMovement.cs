@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 movement;
     private Vector2 lastMovement = new Vector2(0, -1);
+    private float footstepTimer;
 
     void Start()
     {
@@ -35,7 +36,20 @@ public class PlayerMovement : MonoBehaviour
         isMoving = movement != Vector2.zero && !isDashing;
         if (isMoving)
         {
+            footstepTimer -= Time.deltaTime;
+
+            if (footstepTimer <= 0f)
+            {
+                AudioManager audioManager =
+                    Object.FindFirstObjectByType<AudioManager>();
+
+                audioManager.PlaySFX(audioManager.playerFootstepSound);
+
+                footstepTimer = audioManager.playerFootstepSound.length;
+            }
+
             lastMovement = movement;
+
             animator.SetFloat("MoveX", movement.x);
             animator.SetFloat("MoveY", movement.y);
         }
@@ -61,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
         bool dashPressed = Input.GetButtonDown("Fire3");
         if (dashPressed && !isDashing && canDash)
         {
+            FindObjectOfType<AudioManager>().PlaySFX(FindObjectOfType<AudioManager>().dashSound);
+
             isDashing = true;
             canDash = false;
             StartCoroutine(StartDashTimer());

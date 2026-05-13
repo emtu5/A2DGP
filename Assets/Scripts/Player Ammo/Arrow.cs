@@ -39,12 +39,17 @@ public class Arrow : MonoBehaviour
 
         Debug.Log("Hit enemy with " + data.ammoType);
 
+        // PLAYER BULLET HIT SOUND
+        FindObjectOfType<AudioManager>()
+            .PlaySFX(FindObjectOfType<AudioManager>().playerBulletHit);
+
         if (data.effect != null)
         {
             data.effect.Apply(collision.gameObject, data.damage);
         }
 
         HealthSystem enemySystem = collision.GetComponent<HealthSystem>();
+
         enemySystem?.TakeDamage(data.damage);
 
         ReturnToPool();
