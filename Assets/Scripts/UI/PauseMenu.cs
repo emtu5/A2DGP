@@ -6,44 +6,50 @@ public class PauseMenu : MonoBehaviour
     public GameObject overlay;
     public GameObject pauseButton;
 
-    private bool isPaused = false;
-
     void Start()
     {
         overlay.SetActive(false);
 
         pauseButton.SetActive(true);
 
-        Time.timeScale = 1f;
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
+    void OnEnable()
+    {
+        PauseManager.OnPause += ShowPauseMenu;
+        PauseManager.OnResume += HidePauseMenu;
+    }
+
+    void OnDisable()
+    {
+        PauseManager.OnPause -= ShowPauseMenu;
+        PauseManager.OnResume -= HidePauseMenu;
+    }
+
     public void Pause()
     {
-        if (isPaused) return;
-
-        overlay.SetActive(true);
-
-        pauseButton.SetActive(false);
-
-        Time.timeScale = 0f;
-
-        isPaused = true;
+        PauseManager.Instance.PauseGame();
     }
 
     public void Resume()
     {
-        if (!isPaused) return;
+        PauseManager.Instance.ResumeGame();
+    }
 
+    void ShowPauseMenu()
+    {
+        overlay.SetActive(true);
+
+        pauseButton.SetActive(false);
+    }
+
+    void HidePauseMenu()
+    {
         overlay.SetActive(false);
 
         pauseButton.SetActive(true);
-
-        Time.timeScale = 1f;
-
-        isPaused = false;
     }
 
     public void Replay()
