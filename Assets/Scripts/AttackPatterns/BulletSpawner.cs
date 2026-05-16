@@ -45,7 +45,7 @@ public class BulletSpawner : MonoBehaviour
 
             // Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
 
-            float spawnOffset = 0.6f;
+            float spawnOffset = 0.4f;
             GameObject bulletObj = bulletPool.GetPooledObject().gameObject;
             Bullet newBullet = bulletObj.GetComponent<Bullet>();
             newBullet.transform.position = startPoint + bulletDirection * spawnOffset;

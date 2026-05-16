@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
   m_Name: Dense
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 3
+  moveSpeed: 3.2
   acceleration: 0
   startingAngle: 0
   angleStep: 5
-  firingRate: 0.3
+  firingRate: 0.2
   numberOfBullets: 15
-  lifetime: 3
+  lifetime: 5
