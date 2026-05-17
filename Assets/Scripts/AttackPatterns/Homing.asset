@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
-  m_Name: SpiralRays
+  m_Name: Homing
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 15
-  acceleration: 0
+  moveSpeed: 2
+  acceleration: 1
   startingAngle: 0
-  angleStep: 10
-  firingRate: 0.08
-  numberOfBullets: 3
-  lifetime: 1
-  homingTimer: 0
+  angleStep: 0
+  firingRate: 0.5
+  numberOfBullets: 1
+  lifetime: 10
+  homingTimer: 3

@@ -18,4 +18,5 @@ MonoBehaviour:
   angleStep: 10
   firingRate: 0.2
   numberOfBullets: 8
-  lifetime: 1
+  lifetime: 3
+  homingTimer: 0

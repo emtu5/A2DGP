@@ -8,7 +8,9 @@ public class Bullet : MonoBehaviour
     private float moveSpeed;
     private float acceleration = 0f;
     private float lifespan = 0f;
+    private float homingTimer = 0f;
     private PooledObject pooledObject;
+    private GameObject player;
 
     [Header("Damage Settings")]
     [SerializeField] private float damage = 10f;
@@ -16,11 +18,17 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         pooledObject = GetComponent<PooledObject>();
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
     {
         transform.position = transform.position + moveDirection * moveSpeed * Time.deltaTime;
+        if (homingTimer > 0)
+        {
+            moveDirection = (player.transform.position - transform.position).normalized;
+            transform.eulerAngles = new Vector3(0, 0, (float)(Mathf.Atan2(moveDirection.y, moveDirection.x) * 180f / Math.PI));
+        }
         moveSpeed += acceleration * Time.deltaTime;
     }
 
@@ -42,6 +50,11 @@ public class Bullet : MonoBehaviour
     public void SetLifetime(float life)
     {
         lifespan = life;
+    }
+
+    public void SetHomingTimer(float home)
+    {
+        homingTimer = home;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -78,6 +91,17 @@ public class Bullet : MonoBehaviour
         moveSpeed = 0;
         pooledObject.Release();
         gameObject.SetActive(false);
+    }
+
+    public void StartHomingTimer()
+    {
+        StartCoroutine(DeactivateHoming());
+    }
+
+    IEnumerator DeactivateHoming()
+    {
+        yield return new WaitForSeconds(homingTimer);
+        homingTimer = 0;
     }
 
     internal void Init(Vector2 dir, float bulletSpeed, float bulletLifetime)

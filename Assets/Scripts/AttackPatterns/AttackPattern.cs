@@ -17,4 +17,6 @@ public class AttackPattern : ScriptableObject
     public float numberOfBullets = 6f;
     [SerializeField]
     public float lifetime = 1f;
+    [SerializeField]
+    public float homingTimer = 0f;
 }
