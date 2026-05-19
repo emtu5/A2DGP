@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Homing
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
   moveSpeed: 2
-  acceleration: 1
+  acceleration: 0.2
   startingAngle: 0
-  angleStep: 0
+  angleStep: 120
   firingRate: 0.5
   numberOfBullets: 1
   lifetime: 10

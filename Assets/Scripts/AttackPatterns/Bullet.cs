@@ -64,10 +64,15 @@ public class Bullet : MonoBehaviour
             Debug.Log("Player hit by bullet. Damage: " + damage);
 
             HealthSystem playerHealth = collision.GetComponentInParent<HealthSystem>();
+            FreezeTime freezeTime = GameObject.FindGameObjectWithTag("GameController").GetComponent<FreezeTime>();
 
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
+                if (freezeTime != null)
+                {
+                    freezeTime.Freeze(0.05f);
+                }
             }
 
             Deactivate();
