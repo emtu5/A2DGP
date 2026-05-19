@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 public class EnemyStateMachine : MonoBehaviour
 {
     private IEnemyState currentState;
@@ -94,7 +95,7 @@ public class EnemyStateMachine : MonoBehaviour
     {
         if (spriteRenderer == null) yield break;
         Color original = spriteRenderer.color;
-        spriteRenderer.color =new Color(0.686f, 0f, 1f);
+        spriteRenderer.color =new Color(0.8f, 0.8f, 0.8f);
         yield return new WaitForSeconds(0.3f);
         spriteRenderer.color = original;
     
@@ -107,4 +108,33 @@ public class EnemyStateMachine : MonoBehaviour
             movingState.SetSpeedMultiplier(multiplier);
         }
     }
+
+    public void SetFiringSpeedMultiplier(float multiplier)
+    {
+        if (currentState is ShootingState shootingState)
+        {
+            shootingState.SetFiringSpeedMultiplier(multiplier);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Arrow"))
+    {
+        Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
+        SpriteRenderer enemySprite = GetComponent<SpriteRenderer>();
+        if (enemySprite != null)
+        {
+            StartCoroutine(FlashRed(enemySprite));
+        }
+    }
+}
+
+private IEnumerator FlashRed(SpriteRenderer sprite)
+{
+    Color originalColor = sprite.color;
+    sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
+    yield return new WaitForSeconds(0.1f);
+    sprite.color = originalColor;
+}
 }

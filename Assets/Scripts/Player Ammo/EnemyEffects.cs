@@ -26,12 +26,18 @@ public class EnemyEffects : MonoBehaviour
     private IEnumerator SlowRoutine(float multiplier, float duration)
     {
         if (stateMachine != null)
+        {
             stateMachine.SetSpeedMultiplier(multiplier);
-
+            stateMachine.SetFiringSpeedMultiplier(1f / multiplier);
+        }
+            
         yield return new WaitForSeconds(duration);
 
         if (stateMachine != null)
+        {
             stateMachine.SetSpeedMultiplier(1f);
+            stateMachine.SetFiringSpeedMultiplier(1f);
+        }
     }
 
     public void ApplyPoison(float damagePerTick, float duration, float tickRate)

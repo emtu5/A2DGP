@@ -6,6 +6,7 @@ public class ShootingState : IEnemyState
     private float timeInState;
 
     private float stateDuration = 3f;
+    private float firingSpeedMultiplier = 1f;
 
     public void Enter(EnemyStateMachine enemy)
     {
@@ -31,7 +32,7 @@ public class ShootingState : IEnemyState
         // Fire bullets based on pattern fire rate
         shootTimer += Time.deltaTime;
 
-        if (shootTimer >= enemy.bulletSpawner.Pattern.firingRate)
+        if (shootTimer >= enemy.bulletSpawner.Pattern.firingRate * firingSpeedMultiplier)
         {
             enemy.bulletSpawner.FireBullets();
             shootTimer = 0f;
@@ -41,5 +42,10 @@ public class ShootingState : IEnemyState
     public void Exit(EnemyStateMachine enemy)
     {
         Debug.Log("Exited Shooting State");
+    }
+
+    public void SetFiringSpeedMultiplier(float multiplier)
+    {
+        firingSpeedMultiplier = multiplier;
     }
 }
