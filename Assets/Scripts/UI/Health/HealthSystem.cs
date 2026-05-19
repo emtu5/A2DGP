@@ -45,6 +45,14 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+        NotifyHealthChanged();
+    }
+
     private void NotifyHealthChanged()
     {
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
