@@ -103,10 +103,10 @@ TextureImporter:
       name: Fire_Arrow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 1760
+        x: 428
+        y: 746
+        width: 1402
+        height: 409
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
