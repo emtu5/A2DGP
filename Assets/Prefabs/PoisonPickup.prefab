@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1479527357537990051}
   - component: {fileID: 8647535993040773679}
   - component: {fileID: 1294106016733631008}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PoisonPickup
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
