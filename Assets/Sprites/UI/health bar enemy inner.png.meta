@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f13bf5b91a0baec43bdc7610112de42d
+guid: c7b1992799966a74885d0ff5a78e2358
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5486617982277397689
-    second: Ice_Arrow_0
+      213: 4391623119789755990
+    second: health bar enemy inner_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice_Arrow_0
+      name: health bar enemy inner_0
       rect:
         serializedVersion: 2
-        x: 616
-        y: 483
-        width: 472
-        height: 1391
+        x: 8
+        y: 1
+        width: 284
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 743d514b30e9bd3b0800000000000000
-      internalID: -5486617982277397689
+      spriteID: 65e067aa5fd22fc30800000000000000
+      internalID: 4391623119789755990
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice_Arrow_0: -5486617982277397689
+      health bar enemy inner_0: 4391623119789755990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
