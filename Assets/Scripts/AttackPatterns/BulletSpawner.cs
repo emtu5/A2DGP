@@ -1,6 +1,6 @@
 using System;
 using Unity.VisualScripting;
-using UnityEditor.PackageManager;
+// using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
@@ -45,7 +45,7 @@ public class BulletSpawner : MonoBehaviour
 
             // Bullet newBullet = Instantiate(bulletPrefab).GetComponent<Bullet>();
 
-            float spawnOffset = 0.6f;
+            float spawnOffset = 0.4f;
             GameObject bulletObj = bulletPool.GetPooledObject().gameObject;
             Bullet newBullet = bulletObj.GetComponent<Bullet>();
             newBullet.transform.position = startPoint + bulletDirection * spawnOffset;
@@ -54,7 +54,10 @@ public class BulletSpawner : MonoBehaviour
             newBullet.SetMoveSpeed(pattern.moveSpeed);
             newBullet.SetAcceleration(pattern.acceleration);
             newBullet.SetLifetime(pattern.lifetime);
+            newBullet.SetHomingTimer(pattern.homingTimer);
+            newBullet.SetFadeOut(pattern.isFadeOut);
             newBullet.StartDeactivating();
+            newBullet.StartHomingTimer();
         }
 
         currentAngle = (360f + currentAngle + pattern.angleStep) % 360f;
