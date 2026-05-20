@@ -20,3 +20,4 @@ MonoBehaviour:
   numberOfBullets: 8
   lifetime: 3
   homingTimer: 0
+  isFadeOut: 1

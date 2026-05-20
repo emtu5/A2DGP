@@ -8,17 +8,21 @@ public class Bullet : MonoBehaviour
     private float moveSpeed;
     private float acceleration = 0f;
     private float lifespan = 0f;
+    private float timeLapsed = 0f;
     private float homingTimer = 0f;
+    private bool isFadeOut = false;
     private PooledObject pooledObject;
     private GameObject player;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Damage Settings")]
     [SerializeField] private float damage = 10f;
 
-    void Start()
+    void Awake()
     {
         pooledObject = GetComponent<PooledObject>();
         player = GameObject.FindWithTag("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -30,6 +34,16 @@ public class Bullet : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, (float)(Mathf.Atan2(moveDirection.y, moveDirection.x) * 180f / Math.PI));
         }
         moveSpeed += acceleration * Time.deltaTime;
+        if (isFadeOut)
+        {
+            spriteRenderer.color = new Color (
+                spriteRenderer.color.r,
+                spriteRenderer.color.g,
+                spriteRenderer.color.b,
+                (lifespan - timeLapsed) / lifespan
+            );
+        }  
+        timeLapsed += Time.deltaTime;
     }
 
     public void SetMoveDirection(Vector3 dir)
@@ -55,6 +69,13 @@ public class Bullet : MonoBehaviour
     public void SetHomingTimer(float home)
     {
         homingTimer = home;
+    }
+
+    public void SetFadeOut(bool fade)
+    {
+        isFadeOut = fade;
+        spriteRenderer.color = Color.white;
+        timeLapsed = 0f;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

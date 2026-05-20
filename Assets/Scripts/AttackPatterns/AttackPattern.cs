@@ -19,4 +19,5 @@ public class AttackPattern : ScriptableObject
     public float lifetime = 1f;
     [SerializeField]
     public float homingTimer = 0f;
+    public bool isFadeOut = false;
 }
