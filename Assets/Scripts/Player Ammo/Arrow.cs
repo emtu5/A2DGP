@@ -41,7 +41,7 @@ public class Arrow : MonoBehaviour
 
         // PLAYER BULLET HIT SOUND
         FindObjectOfType<AudioManager>()
-            .PlaySFX(FindObjectOfType<AudioManager>().playerBulletHit);
+            .PlaySFX(FindObjectOfType<AudioManager>().enemyBulletHit);
 
         if (data.effect != null)
         {

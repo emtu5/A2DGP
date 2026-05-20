@@ -96,6 +96,9 @@ public class Bullet : MonoBehaviour
                 }
             }
 
+            FindObjectOfType<AudioManager>()
+                .PlaySFX(FindObjectOfType<AudioManager>().playerBulletHit);
+
             Deactivate();
         }
     }
