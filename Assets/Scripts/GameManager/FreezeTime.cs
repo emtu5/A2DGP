@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class FreezeTime : MonoBehaviour
 {
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     public void Freeze(float duration)
     {
         StartCoroutine(StartFreeze(duration));

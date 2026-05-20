@@ -6,9 +6,9 @@ public class HealthPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Collect"))
         {
-            HealthSystem health = other.GetComponent<HealthSystem>();
+            HealthSystem health = other.GetComponentInParent<HealthSystem>();
 
             if (health != null)
             {
