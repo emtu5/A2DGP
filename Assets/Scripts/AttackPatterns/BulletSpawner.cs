@@ -54,7 +54,10 @@ public class BulletSpawner : MonoBehaviour
             newBullet.SetMoveSpeed(pattern.moveSpeed);
             newBullet.SetAcceleration(pattern.acceleration);
             newBullet.SetLifetime(pattern.lifetime);
+            newBullet.SetHomingTimer(pattern.homingTimer);
+            newBullet.SetFadeOut(pattern.isFadeOut);
             newBullet.StartDeactivating();
+            newBullet.StartHomingTimer();
         }
 
         currentAngle = (360f + currentAngle + pattern.angleStep) % 360f;

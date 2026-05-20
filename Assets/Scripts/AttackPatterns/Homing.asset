@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
-  m_Name: Dense
+  m_Name: Homing
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 3.2
-  acceleration: 0
+  moveSpeed: 2
+  acceleration: 0.2
   startingAngle: 0
-  angleStep: 5
-  firingRate: 0.2
-  numberOfBullets: 15
-  lifetime: 5
-  homingTimer: 0
-  isFadeOut: 1
+  angleStep: 120
+  firingRate: 0.5
+  numberOfBullets: 1
+  lifetime: 10
+  homingTimer: 3
