@@ -14,6 +14,7 @@ public class EnemyStateMachine : MonoBehaviour
     public float minY = -4f;
     public float maxY = 4f;
     public Animator animator;
+    private Coroutine flashRed;
     
     void Start()
     {
@@ -118,23 +119,28 @@ public class EnemyStateMachine : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other)
-{
-    if (other.CompareTag("Arrow"))
     {
-        Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
-        SpriteRenderer enemySprite = GetComponent<SpriteRenderer>();
-        if (enemySprite != null)
+        if (other.CompareTag("Arrow"))
         {
-            StartCoroutine(FlashRed(enemySprite));
+            Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
+            SpriteRenderer enemySprite = GetComponent<SpriteRenderer>();
+            if (enemySprite != null)
+            {
+                if (flashRed != null)
+                {
+                    StopCoroutine(flashRed);
+                }
+                flashRed = StartCoroutine(FlashRed(enemySprite));
+            }
         }
     }
-}
 
-private IEnumerator FlashRed(SpriteRenderer sprite)
-{
-    Color originalColor = sprite.color;
-    sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
-    yield return new WaitForSeconds(0.1f);
-    sprite.color = originalColor;
-}
+    private IEnumerator FlashRed(SpriteRenderer sprite)
+    {
+        Color originalColor = sprite.color;
+        sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = originalColor;
+        flashRed = null;
+    }
 }

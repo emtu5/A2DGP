@@ -4001,8 +4001,12 @@ PrefabInstance:
       objectReference: {fileID: 2697499868052367263, guid: a4eadb29fc821f223b06a10517ca7a60, type: 3}
     - target: {fileID: 4762140164092868181, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: patterns.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4762140164092868181, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: 'patterns.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dc436d61a989414cf9c7c4ec1f27d698, type: 2}
     - target: {fileID: 5588223453359894772, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: m_Name
       value: Ack
@@ -4308,6 +4312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061304452}
   - component: {fileID: 1061304453}
+  - component: {fileID: 1061304454}
   m_Layer: 7
   m_Name: CollideWithPlayer
   m_TagString: Untagged
@@ -4366,6 +4371,33 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.4}
   m_Radius: 0.25
+--- !u!50 &1061304454
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061304451}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1120306707
 GameObject:
   m_ObjectHideFlags: 0
@@ -12318,6 +12350,7 @@ GameObject:
   - component: {fileID: 2041485060}
   - component: {fileID: 2041485061}
   - component: {fileID: 2041485062}
+  - component: {fileID: 2041485063}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12473,6 +12506,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f8798e2a169a14886505ed7df1e0c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraShake
+--- !u!114 &2041485063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041485056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c304f010264a54499b47a834c346d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraRecoil
 --- !u!1001 &2062851208
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class PlayerShooting : MonoBehaviour
         mouse.z = 0;
 
         Vector2 dir = (mouse - transform.position).normalized;
-
+        Camera.main.GetComponent<CameraRecoil>().Recoil(dir * 0.01f, 0.2f);
         playerAmmo.Shoot(dir);
     }
 }
