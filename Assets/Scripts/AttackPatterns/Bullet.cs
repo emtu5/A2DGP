@@ -133,6 +133,14 @@ public class Bullet : MonoBehaviour
         homingTimer = 0;
     }
 
+    public void SetSprite(Sprite spr)
+    {
+        if (spr != null)
+        {
+            spriteRenderer.sprite = spr;
+        }
+    }
+
     internal void Init(Vector2 dir, float bulletSpeed, float bulletLifetime)
     {
         moveDirection = dir.normalized;

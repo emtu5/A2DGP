@@ -21,3 +21,4 @@ MonoBehaviour:
   lifetime: 5
   homingTimer: 0
   isFadeOut: 1
+  bulletSprite: {fileID: 3452003437791708593, guid: ba0c8df3f1458cb8c8b18a0a0415b1a5, type: 3}

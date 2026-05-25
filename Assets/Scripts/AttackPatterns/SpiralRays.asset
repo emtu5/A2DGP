@@ -20,3 +20,5 @@ MonoBehaviour:
   numberOfBullets: 3
   lifetime: 1
   homingTimer: 0
+  isFadeOut: 0
+  bulletSprite: {fileID: 1098286324429101383, guid: 9ea9e40ebdad07a74bc545fdecd5d0a8, type: 3}
