@@ -4,48 +4,49 @@ public class ShootingState : IEnemyState
 {
     private float shootTimer;
     private float timeInState;
-
     private float stateDuration = 3f;
     private float firingSpeedMultiplier = 1f;
+    private bool autoTransition;
 
-    public void Enter(EnemyStateMachine enemy)
+    // Constructor with optional autoTransition flag (default true for Boss1)
+    public ShootingState(bool autoTransition = true)
+    {
+        this.autoTransition = autoTransition;
+    }
+
+    public void Enter(IEnemyStateMachine enemy)
     {
         shootTimer = 0f;
         timeInState = 0f;
-        enemy.animator.SetBool("IsMoving", false);
-        enemy.animator.SetBool("IsAttacking", true);
+        enemy.SetMovementEnabled(false);
+        enemy.SetAnimationBool("IsMoving", false);
+        enemy.SetAnimationBool("IsAttacking", true);
         Debug.Log("Entered Shooting State");
     }
 
-    public void Update(EnemyStateMachine enemy)
+    public void Update(IEnemyStateMachine enemy)
     {
-        // Count total time in shooting state
         timeInState += Time.deltaTime;
 
-        // Leave shooting state after some seconds
-        if (timeInState >= stateDuration)
+        if (autoTransition && timeInState >= stateDuration)
         {
-            enemy.ChangeState(new MovingState());
+            enemy.ChangeState(new MovingState(true));   // auto‑transition back to Moving for Boss1
             return;
         }
 
-        // Fire bullets based on pattern fire rate
         shootTimer += Time.deltaTime;
-
         if (shootTimer >= enemy.bulletSpawner.Pattern.firingRate * firingSpeedMultiplier)
         {
             enemy.bulletSpawner.FireBullets();
             shootTimer = 0f;
+            enemy.SetAnimationTrigger("Shoot");
         }
     }
 
-    public void Exit(EnemyStateMachine enemy)
+    public void Exit(IEnemyStateMachine enemy)
     {
         Debug.Log("Exited Shooting State");
     }
 
-    public void SetFiringSpeedMultiplier(float multiplier)
-    {
-        firingSpeedMultiplier = multiplier;
-    }
+    public void SetFiringSpeedMultiplier(float multiplier) => firingSpeedMultiplier = multiplier;
 }

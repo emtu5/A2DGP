@@ -1,8 +1,6 @@
-using UnityEngine;
-
 public interface IEnemyState
 {
-    void Enter(EnemyStateMachine enemy);
-    void Update(EnemyStateMachine enemy);
-    void Exit(EnemyStateMachine enemy);
+    void Enter(IEnemyStateMachine enemy);
+    void Update(IEnemyStateMachine enemy);
+    void Exit(IEnemyStateMachine enemy);
 }
