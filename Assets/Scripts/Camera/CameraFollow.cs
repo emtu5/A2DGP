@@ -13,18 +13,20 @@ public class CameraFollowSimplified : MonoBehaviour
     [SerializeField] private float rightLimit = 9.6f;
 
     private CameraShake shake;
+    private CameraRecoil recoil;
 
     private void Awake()
     {
         mainCamera = GetComponent<Camera>();
         shake = GetComponent<CameraShake>();  
+        recoil = GetComponent<CameraRecoil>();
     }
 
     private void LateUpdate()
     {
         if (target == null) return;
 
-        Vector3 desiredPosition = Vector3.Lerp(transform.position, target.position, followSpeed * Time.deltaTime);
+        Vector3 desiredPosition = Vector3.Lerp(transform.position + recoil.CurrentRecoilOffset, target.position, followSpeed * Time.deltaTime);
         desiredPosition.z = transform.position.z;
 
         Vector2 viewSize = new Vector2(

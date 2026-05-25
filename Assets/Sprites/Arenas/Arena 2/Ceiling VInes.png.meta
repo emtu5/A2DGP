@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 83cd9cefd7998df95b59bdd4e6f07bb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5882811406123255378
+    second: Ceiling VInes_0
+  - first:
+      213: -749442892405362251
+    second: Ceiling VInes_1
+  - first:
+      213: 4085006420173338798
+    second: Ceiling VInes_2
+  - first:
+      213: -1071165738818272115
+    second: Ceiling VInes_3
+  - first:
+      213: 5708642972750486167
+    second: Ceiling VInes_4
+  - first:
+      213: 5191892731052011398
+    second: Ceiling VInes_5
+  - first:
+      213: 8322853324338401869
+    second: Ceiling VInes_6
+  - first:
+      213: -9003538380379099647
+    second: Ceiling VInes_7
+  - first:
+      213: -8896161094418371242
+    second: Ceiling VInes_8
+  - first:
+      213: 8125079189040421060
+    second: Ceiling VInes_9
+  - first:
+      213: 7369320594098172790
+    second: Ceiling VInes_10
+  - first:
+      213: 186645576999243794
+    second: Ceiling VInes_11
+  - first:
+      213: 9121652346771083226
+    second: Ceiling VInes_12
+  - first:
+      213: 8835463186095088348
+    second: Ceiling VInes_13
+  - first:
+      213: -3468455152414568699
+    second: Ceiling VInes_14
+  - first:
+      213: 1501550577046636779
+    second: Ceiling VInes_15
+  - first:
+      213: 411669027821492166
+    second: Ceiling VInes_16
+  - first:
+      213: 1639382910686768205
+    second: Ceiling VInes_17
+  - first:
+      213: 2558198323517456826
+    second: Ceiling VInes_18
+  - first:
+      213: -1890212257250966403
+    second: Ceiling VInes_19
+  - first:
+      213: 3145222309869037504
+    second: Ceiling VInes_20
+  - first:
+      213: -2852205307286497009
+    second: Ceiling VInes_21
+  - first:
+      213: 9049911547959822285
+    second: Ceiling VInes_22
+  - first:
+      213: 2792123242506495597
+    second: Ceiling VInes_23
+  - first:
+      213: 903688840618766361
+    second: Ceiling VInes_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ceiling VInes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2275
+        width: 61
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea93861d13e0c5ea0800000000000000
+      internalID: -5882811406123255378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2242
+        width: 72
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1bcbaf8a17995f0800000000000000
+      internalID: -749442892405362251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2360
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea83f9322bbd0b830800000000000000
+      internalID: 4085006420173338798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2480
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d840b229f647221f0800000000000000
+      internalID: -1071165738818272115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2326
+        width: 85
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a925cb98c293f40800000000000000
+      internalID: 5708642972750486167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_5
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2257
+        width: 379
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fa94a5eee4d0840800000000000000
+      internalID: 5191892731052011398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 2300
+        width: 77
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d429eda8007b08370800000000000000
+      internalID: 8322853324338401869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_7
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 2438
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e68ebbb810d0380800000000000000
+      internalID: -9003538380379099647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_8
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2299
+        width: 45
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dea865e9c7a8480800000000000000
+      internalID: -8896161094418371242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_9
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 2234
+        width: 98
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c85ca2597412c070800000000000000
+      internalID: 8125079189040421060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_10
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2200
+        width: 90
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67331373906154660800000000000000
+      internalID: 7369320594098172790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_11
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 2318
+        width: 103
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21010f3d929179200800000000000000
+      internalID: 186645576999243794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_12
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 2437
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf06e51b7e969e70800000000000000
+      internalID: 9121652346771083226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_13
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 2285
+        width: 96
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd22d3994fedd9a70800000000000000
+      internalID: 8835463186095088348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_14
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 2215
+        width: 381
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fc4f06a629ddfc0800000000000000
+      internalID: -3468455152414568699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_15
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2258
+        width: 86
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8c5255b4496d410800000000000000
+      internalID: 1501550577046636779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_16
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 2309
+        width: 63
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c79458bcca86b500800000000000000
+      internalID: 411669027821492166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_17
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 2121
+        width: 926
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ca45a421240c610800000000000000
+      internalID: 1639382910686768205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_18
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 2222
+        width: 93
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1024242db808320800000000000000
+      internalID: 2558198323517456826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_19
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 2225
+        width: 99
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74877087fd94c5e0800000000000000
+      internalID: -1890212257250966403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_20
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 2185
+        width: 372
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7a067d60316ab20800000000000000
+      internalID: 3145222309869037504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_21
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 805
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0954b8726eea68d0800000000000000
+      internalID: -2852205307286497009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 757
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7c9d8ba9eb79d70800000000000000
+      internalID: 9049911547959822285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_23
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 658
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6626b6bb4d9fb620800000000000000
+      internalID: 2792123242506495597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling VInes_24
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 578
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910f09c663c8a8c00800000000000000
+      internalID: 903688840618766361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ceiling VInes_0: -5882811406123255378
+      Ceiling VInes_1: -749442892405362251
+      Ceiling VInes_10: 7369320594098172790
+      Ceiling VInes_11: 186645576999243794
+      Ceiling VInes_12: 9121652346771083226
+      Ceiling VInes_13: 8835463186095088348
+      Ceiling VInes_14: -3468455152414568699
+      Ceiling VInes_15: 1501550577046636779
+      Ceiling VInes_16: 411669027821492166
+      Ceiling VInes_17: 1639382910686768205
+      Ceiling VInes_18: 2558198323517456826
+      Ceiling VInes_19: -1890212257250966403
+      Ceiling VInes_2: 4085006420173338798
+      Ceiling VInes_20: 3145222309869037504
+      Ceiling VInes_21: -2852205307286497009
+      Ceiling VInes_22: 9049911547959822285
+      Ceiling VInes_23: 2792123242506495597
+      Ceiling VInes_24: 903688840618766361
+      Ceiling VInes_3: -1071165738818272115
+      Ceiling VInes_4: 5708642972750486167
+      Ceiling VInes_5: 5191892731052011398
+      Ceiling VInes_6: 8322853324338401869
+      Ceiling VInes_7: -9003538380379099647
+      Ceiling VInes_8: -8896161094418371242
+      Ceiling VInes_9: 8125079189040421060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

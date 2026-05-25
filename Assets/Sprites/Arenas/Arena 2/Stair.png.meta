@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 831d87f6a895897449d4dd2ff7305913
+guid: 965c34f2b856c6c8bb0244df8d0e44a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8465477110594416671
-    second: Stake_0
+      213: 1537640501440115582
+    second: Stair_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stake_0
+      name: Stair_0
       rect:
         serializedVersion: 2
-        x: 681
-        y: 471
-        width: 1037
-        height: 420
+        x: 1485
+        y: 0
+        width: 535
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1efc1d08b65948a80800000000000000
-      internalID: -8465477110594416671
+      spriteID: e737798a3ebc65510800000000000000
+      internalID: 1537640501440115582
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d8dd69fc3f96c7f21914d21c09097bc5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Stake_0: -8465477110594416671
+      Stair_0: 1537640501440115582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

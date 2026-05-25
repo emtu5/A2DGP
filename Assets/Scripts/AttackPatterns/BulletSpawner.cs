@@ -56,6 +56,7 @@ public class BulletSpawner : MonoBehaviour
             newBullet.SetLifetime(pattern.lifetime);
             newBullet.SetHomingTimer(pattern.homingTimer);
             newBullet.SetFadeOut(pattern.isFadeOut);
+            newBullet.SetSprite(pattern.bulletSprite);
             newBullet.StartDeactivating();
             newBullet.StartHomingTimer();
         }

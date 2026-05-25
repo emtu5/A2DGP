@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 831d87f6a895897449d4dd2ff7305913
+guid: 6d0394ca151ef217eb39856d271e4a41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8465477110594416671
-    second: Stake_0
+      213: 545955107584687507
+    second: lily pads_0
+  - first:
+      213: -2009878660864023240
+    second: lily pads_1
+  - first:
+      213: -7916587493083544186
+    second: lily pads_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stake_0
+      name: lily pads_0
       rect:
         serializedVersion: 2
-        x: 681
-        y: 471
-        width: 1037
-        height: 420
+        x: 34
+        y: 181
+        width: 165
+        height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1efc1d08b65948a80800000000000000
-      internalID: -8465477110594416671
+      spriteID: 39d35ea174f939700800000000000000
+      internalID: 545955107584687507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lily pads_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 83
+        width: 165
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835ef89b10a7b14e0800000000000000
+      internalID: -2009878660864023240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lily pads_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 165
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68584717e91a22290800000000000000
+      internalID: -7916587493083544186
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d8dd69fc3f96c7f21914d21c09097bc5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Stake_0: -8465477110594416671
+      lily pads_0: 545955107584687507
+      lily pads_1: -2009878660864023240
+      lily pads_2: -7916587493083544186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

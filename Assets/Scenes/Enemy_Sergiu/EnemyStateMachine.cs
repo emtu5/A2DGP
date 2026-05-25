@@ -19,6 +19,8 @@ public class EnemyStateMachine : MonoBehaviour, IEnemyStateMachine
     public float minY = -4f;
     public float maxY = 4f;
 
+    private Coroutine flashRed;
+    
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -125,15 +127,22 @@ public class EnemyStateMachine : MonoBehaviour, IEnemyStateMachine
             Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
             SpriteRenderer enemySprite = GetComponent<SpriteRenderer>();
             if (enemySprite != null)
-                StartCoroutine(FlashRed(enemySprite));
+            {
+                if (flashRed != null)
+                {
+                    StopCoroutine(flashRed);
+                }
+                flashRed = StartCoroutine(FlashRed(enemySprite));
+            }
         }
     }
 
     private IEnumerator FlashRed(SpriteRenderer sprite)
     {
-        Color original = sprite.color;
-        sprite.color = new Color(1f, 0.5f, 0.5f, original.a);
+        Color originalColor = sprite.color;
+        sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
         yield return new WaitForSeconds(0.1f);
-        sprite.color = original;
+        sprite.color = originalColor;
+        flashRed = null;
     }
 }
