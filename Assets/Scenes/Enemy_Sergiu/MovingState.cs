@@ -5,74 +5,62 @@ public class MovingState : IEnemyState
     private Vector2 movementDirection;
     private float changeDirectionTimer;
     private float moveTimer;
-
     private float changeDirectionTime = 2f;
-    private float moveDuration = 3f;   // how long enemy moves before shooting
+    private float moveDuration = 3f;
     private float moveSpeed = 2f;
     private float speedMultiplier = 1f;
-    private float footstepTimer;
+    private bool autoTransition;
 
+    // Constructor with optional autoTransition flag (default true for Boss1)
+    public MovingState(bool autoTransition = true)
+    {
+        this.autoTransition = autoTransition;
+    }
 
-    public void Enter(EnemyStateMachine enemy)
+    public void Enter(IEnemyStateMachine enemy)
     {
         ChooseNewDirection();
         changeDirectionTimer = changeDirectionTime;
         moveTimer = 0f;
-        enemy.animator.SetBool("IsMoving", true);
-        enemy.animator.SetBool("IsAttacking", false);
+        enemy.SetMovementEnabled(true);
+        enemy.SetAnimationBool("IsMoving", true);
+        enemy.SetAnimationBool("IsAttacking", false);
         Debug.Log("Entered Moving State");
     }
 
-    public void Update(EnemyStateMachine enemy)
+    public void Update(IEnemyStateMachine enemy)
     {
-
         moveTimer += Time.deltaTime;
 
-        // After some seconds → switch to shooting
-        if (moveTimer >= moveDuration)
+        // Only auto‑transition if flag is true
+        if (autoTransition && moveTimer >= moveDuration)
         {
-            enemy.ChangeState(new ShootingState());
+            enemy.ChangeState(new ShootingState(true));   // auto‑transition to Shooting for Boss1
             return;
         }
 
-        // Change direction occasionally
         changeDirectionTimer -= Time.deltaTime;
         if (changeDirectionTimer <= 0)
         {
             ChooseNewDirection();
+            changeDirectionTimer = changeDirectionTime;
         }
 
-        footstepTimer -= Time.deltaTime;
-
-        if (footstepTimer <= 0f)
-        {
-            AudioManager audioManager =
-                Object.FindFirstObjectByType<AudioManager>();
-
-            audioManager.PlaySFX(audioManager.enemyFootstepSound);
-
-            footstepTimer = audioManager.enemyFootstepSound.length;
-        }
-
-        // Move enemy
         enemy.transform.Translate(movementDirection * moveSpeed * speedMultiplier * Time.deltaTime);
-
-        enemy.animator.SetFloat("MoveX", movementDirection.x);
-        enemy.animator.SetFloat("MoveY", movementDirection.y);
+        enemy.SetAnimationFloat("MoveX", movementDirection.x);
+        enemy.SetAnimationFloat("MoveY", movementDirection.y);
     }
 
-    public void Exit(EnemyStateMachine enemy)
+    public void Exit(IEnemyStateMachine enemy)
     {
+        enemy.SetMovementEnabled(false);
         Debug.Log("Exited Moving State");
     }
 
     private void ChooseNewDirection()
     {
         movementDirection = Random.insideUnitCircle.normalized;
-        changeDirectionTimer = changeDirectionTime;
     }
-    public void SetSpeedMultiplier(float multiplier)
-    {
-        speedMultiplier = multiplier;
-    }
+
+    public void SetSpeedMultiplier(float multiplier) => speedMultiplier = multiplier;
 }
