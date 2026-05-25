@@ -7,10 +7,10 @@ public class AmmoPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
+        if (!collision.CompareTag("Collect"))
             return;
 
-        PlayerAmmo player = collision.GetComponent<PlayerAmmo>();
+        PlayerAmmo player = collision.GetComponentInParent<PlayerAmmo>();
 
         if (player == null)
             return;

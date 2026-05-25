@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - Audio
   - Arrow
+  - Collect
   layers:
   - Default
   - TransparentFX
