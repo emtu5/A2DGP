@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: bd4efb97c8ea5b1a9af569bbac376722
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1516987375166231184
+    second: Water Moss_0
+  - first:
+      213: 2914759617827106576
+    second: Water Moss_1
+  - first:
+      213: 1216554353792427239
+    second: Water Moss_2
+  - first:
+      213: -306178265823514399
+    second: Water Moss_3
+  - first:
+      213: -6078501057525063722
+    second: Water Moss_4
+  - first:
+      213: -5064455994080349609
+    second: Water Moss_5
+  - first:
+      213: 1133992659832333675
+    second: Water Moss_6
+  - first:
+      213: -8744111506281112946
+    second: Water Moss_7
+  - first:
+      213: -558435773057593264
+    second: Water Moss_8
+  - first:
+      213: -2824090014522726645
+    second: Water Moss_9
+  - first:
+      213: 6711400857611413396
+    second: Water Moss_10
+  - first:
+      213: 6278236826167570833
+    second: Water Moss_11
+  - first:
+      213: -8758495231997285031
+    second: Water Moss_12
+  - first:
+      213: -2599216976482373824
+    second: Water Moss_13
+  - first:
+      213: 5644746949568749382
+    second: Water Moss_14
+  - first:
+      213: -6814684389861675488
+    second: Water Moss_15
+  - first:
+      213: -1082844216080978009
+    second: Water Moss_16
+  - first:
+      213: 8617923858738351605
+    second: Water Moss_17
+  - first:
+      213: -1695405142386085130
+    second: Water Moss_18
+  - first:
+      213: -4274358300977778163
+    second: Water Moss_19
+  - first:
+      213: -2055128151123883230
+    second: Water Moss_20
+  - first:
+      213: -5446482596016097439
+    second: Water Moss_21
+  - first:
+      213: -5167411507082360089
+    second: Water Moss_22
+  - first:
+      213: 3946758921619454410
+    second: Water Moss_23
+  - first:
+      213: -1090103199371019554
+    second: Water Moss_24
+  - first:
+      213: 3357987952052823011
+    second: Water Moss_25
+  - first:
+      213: 667610555655119089
+    second: Water Moss_26
+  - first:
+      213: -2934713133690780622
+    second: Water Moss_27
+  - first:
+      213: -6484013426049315301
+    second: Water Moss_28
+  - first:
+      213: 183626148341128749
+    second: Water Moss_29
+  - first:
+      213: 5941843787950600071
+    second: Water Moss_30
+  - first:
+      213: 8373163257963204740
+    second: Water Moss_31
+  - first:
+      213: 7777444147252850718
+    second: Water Moss_32
+  - first:
+      213: -8003704493499591486
+    second: Water Moss_33
+  - first:
+      213: 8161846556174349421
+    second: Water Moss_34
+  - first:
+      213: -6362437400550253309
+    second: Water Moss_35
+  - first:
+      213: 7541788826416056752
+    second: Water Moss_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Water Moss_0
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1576
+        width: 1473
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0921989fafb6d0510800000000000000
+      internalID: 1516987375166231184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_1
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1642
+        width: 37
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fec3aed6e437820800000000000000
+      internalID: 2914759617827106576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_2
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 1620
+        width: 143
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4a0cb3db112e010800000000000000
+      internalID: 1216554353792427239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_3
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 1679
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0f4ab4d7c30cbf0800000000000000
+      internalID: -306178265823514399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_4
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1683
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfd1635e73d4aba0800000000000000
+      internalID: -6078501057525063722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_5
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 1707
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7523e342b1077b9b0800000000000000
+      internalID: -5064455994080349609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_6
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1447
+        width: 562
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65e433e050ccbf00800000000000000
+      internalID: 1133992659832333675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_7
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1383
+        width: 301
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a55bfc9eca6a680800000000000000
+      internalID: -8744111506281112946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_8
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 1669
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05018058f990048f0800000000000000
+      internalID: -558435773057593264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_9
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1631
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0725ae2811dec8d0800000000000000
+      internalID: -2824090014522726645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_10
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1646
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4972e2f758fa32d50800000000000000
+      internalID: 6711400857611413396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 758
+        width: 492
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1917e7f3127c02750800000000000000
+      internalID: 6278236826167570833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_12
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1566
+        width: 206
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d69d1bdf2937680800000000000000
+      internalID: -8758495231997285031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_13
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1554
+        width: 139
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f6a9e5ee9bdebd0800000000000000
+      internalID: -2599216976482373824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_14
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 1652
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fd308817b265e40800000000000000
+      internalID: 5644746949568749382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_15
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1553
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e25e537a06d61a0800000000000000
+      internalID: -6814684389861675488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_16
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 172
+        width: 648
+        height: 1277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af28613ce6f8f0f0800000000000000
+      internalID: -1082844216080978009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_17
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 1441
+        width: 81
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd867df614099770800000000000000
+      internalID: 8617923858738351605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_18
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1381
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2f4b17106b878e0800000000000000
+      internalID: -1695405142386085130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_19
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1378
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d023a7395cd6ea4c0800000000000000
+      internalID: -4274358300977778163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_20
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 1118
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b0b58c5d7ba73e0800000000000000
+      internalID: -2055128151123883230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_21
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1076
+        width: 126
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167fc158fe43a64b0800000000000000
+      internalID: -5446482596016097439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_22
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 1103
+        width: 46
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea0718cc9aa948b0800000000000000
+      internalID: -5167411507082360089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_23
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 771
+        width: 459
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac93b311454b5c630800000000000000
+      internalID: 3946758921619454410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_24
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1059
+        width: 185
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda39f07aec2fd0f0800000000000000
+      internalID: -1090103199371019554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_25
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 9
+        width: 1080
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e366224048f99e20800000000000000
+      internalID: 3357987952052823011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_26
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 843
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0ef126344d34900800000000000000
+      internalID: 667610555655119089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_27
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 873
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23400b424fdc547d0800000000000000
+      internalID: -2934713133690780622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_28
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 836
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e877d84282406a0800000000000000
+      internalID: -6484013426049315301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_29
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 788
+        width: 46
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e985f420f5c8200800000000000000
+      internalID: 183626148341128749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_30
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 786
+        width: 61
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f28a3a17ba57250800000000000000
+      internalID: 5941843787950600071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_31
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 683
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480df35ce93733470800000000000000
+      internalID: 8373163257963204740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_32
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 726
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e107279ce380feb60800000000000000
+      internalID: 7777444147252850718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_33
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 615
+        width: 130
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c452c92b212de090800000000000000
+      internalID: -8003704493499591486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_34
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 634
+        width: 76
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6474041334b44170800000000000000
+      internalID: 8161846556174349421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_35
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 658
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dda82d4e414b7a0800000000000000
+      internalID: -6362437400550253309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Moss_36
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 102
+        width: 370
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b90a81caf0d9a860800000000000000
+      internalID: 7541788826416056752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Water Moss_0: 1516987375166231184
+      Water Moss_1: 2914759617827106576
+      Water Moss_10: 6711400857611413396
+      Water Moss_11: 6278236826167570833
+      Water Moss_12: -8758495231997285031
+      Water Moss_13: -2599216976482373824
+      Water Moss_14: 5644746949568749382
+      Water Moss_15: -6814684389861675488
+      Water Moss_16: -1082844216080978009
+      Water Moss_17: 8617923858738351605
+      Water Moss_18: -1695405142386085130
+      Water Moss_19: -4274358300977778163
+      Water Moss_2: 1216554353792427239
+      Water Moss_20: -2055128151123883230
+      Water Moss_21: -5446482596016097439
+      Water Moss_22: -5167411507082360089
+      Water Moss_23: 3946758921619454410
+      Water Moss_24: -1090103199371019554
+      Water Moss_25: 3357987952052823011
+      Water Moss_26: 667610555655119089
+      Water Moss_27: -2934713133690780622
+      Water Moss_28: -6484013426049315301
+      Water Moss_29: 183626148341128749
+      Water Moss_3: -306178265823514399
+      Water Moss_30: 5941843787950600071
+      Water Moss_31: 8373163257963204740
+      Water Moss_32: 7777444147252850718
+      Water Moss_33: -8003704493499591486
+      Water Moss_34: 8161846556174349421
+      Water Moss_35: -6362437400550253309
+      Water Moss_36: 7541788826416056752
+      Water Moss_4: -6078501057525063722
+      Water Moss_5: -5064455994080349609
+      Water Moss_6: 1133992659832333675
+      Water Moss_7: -8744111506281112946
+      Water Moss_8: -558435773057593264
+      Water Moss_9: -2824090014522726645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
