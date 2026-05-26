@@ -12,9 +12,13 @@ GameObject:
   - component: {fileID: 9223341470314005529}
   - component: {fileID: 6749101367427508183}
   - component: {fileID: 8556851710003170118}
+  - component: {fileID: 6813731318790934731}
+  - component: {fileID: -440822042931463521}
+  - component: {fileID: 8123799914131350984}
+  - component: {fileID: 4380003682963606824}
   m_Layer: 0
   m_Name: Lorran
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +32,8 @@ Transform:
   m_GameObject: {fileID: 6188249704482165156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.83299, y: -0.21492, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -1.8407, y: -0.21492, z: 0}
+  m_LocalScale: {x: 0.19542001, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,11 +137,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LorranStateMachine
   player: {fileID: 1119223658772815391, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
-  moveDuration: 4
+  moveDuration: 2
   shootDuration: 3
   spawnDuration: 2
   dashDuration: 1
   minionPrefab: {fileID: 7210830340350561874, guid: f9c76b9f2d2b39b40b5a67050b71a81a, type: 3}
-  minionsToSpawn: 3
+  minionsToSpawn: 2
   spawnRadius: 2
-  dashSpeed: 15
+  dashSpeed: 10
+--- !u!114 &6813731318790934731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188249704482165156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63445601f128243439a117e43b375a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
+  maxHealth: 100
+  currentHealth: 0
+  damageAmount: 10
+  damageKey: 104
+--- !u!114 &-440822042931463521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188249704482165156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc1979ad6b945aebb671d241b688e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackBank
+  patterns:
+  - {fileID: 11400000, guid: eb68f4263b68d12a39dd516b81023fc2, type: 2}
+  - {fileID: 11400000, guid: 88640c3052c56b45087389fbdc8165b6, type: 2}
+  - {fileID: 11400000, guid: b3ee240819187f6d8a6189304dbf939d, type: 2}
+  - {fileID: 11400000, guid: a113c11bab6268dc99d88639b2c7c321, type: 2}
+--- !u!70 &8123799914131350984
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188249704482165156}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 3.37, y: 7.7}
+  m_Direction: 0
+--- !u!95 &4380003682963606824
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188249704482165156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1b06937130345e428048f97ba99f11b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
