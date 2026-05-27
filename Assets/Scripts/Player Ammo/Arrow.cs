@@ -35,7 +35,8 @@ public class Arrow : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Enemy")) return;
+        Debug.Log(collision);
+        if (!(collision.CompareTag("Enemy") || collision.CompareTag("Minion"))) return;
 
         Debug.Log("Hit enemy with " + data.ammoType);
 

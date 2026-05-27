@@ -6,12 +6,13 @@ public class EnemyEffects : MonoBehaviour
     private Coroutine slowRoutine;
     private Coroutine poisonRoutine;
 
-    private EnemyStateMachine stateMachine;
+    private IEnemyStateMachine stateMachine;
     private HealthSystem health;
 
     void Awake()
     {
-        stateMachine = GetComponent<EnemyStateMachine>();
+        stateMachine = GetComponent(typeof(IEnemyStateMachine)) as IEnemyStateMachine;
+        print(stateMachine);
         health = GetComponent<HealthSystem>();
     }
 

@@ -68,5 +68,9 @@ public class HealthSystem : MonoBehaviour
         {
             SceneManager.LoadScene("Win_Scene");   
         }
+        else if (CompareTag("Minion"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
