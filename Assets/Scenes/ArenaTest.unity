@@ -3950,6 +3950,18 @@ PrefabInstance:
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 1445445871}
+    - target: {fileID: 962544827023222795, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 962544827023222795, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 962544827023222795, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2903213498631864207, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.07
@@ -4002,9 +4014,33 @@ PrefabInstance:
       propertyPath: 'patterns.Array.data[2]'
       value: 
       objectReference: {fileID: 11400000, guid: dc436d61a989414cf9c7c4ec1f27d698, type: 2}
+    - target: {fileID: 4888650569702345993, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888650569702345993, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_CallbackLayers.m_Bits
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888650569702345993, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_ForceSendLayers.m_Bits
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888650569702345993, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_ForceReceiveLayers.m_Bits
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888650569702345993, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_ContactCaptureLayers.m_Bits
+      value: 191
+      objectReference: {fileID: 0}
     - target: {fileID: 5588223453359894772, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: m_Name
       value: Ack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048958847581824707, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8697588784327736372, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: maxX
@@ -12681,6 +12717,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1343395299}
+    - target: {fileID: 4485296581896419482, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5176646466105987606, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: moveSpeed
       value: 4
