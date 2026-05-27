@@ -11,4 +11,7 @@ public interface IEnemyStateMachine
     void SetAnimationFloat(string name, float value);
     void SetAnimationTrigger(string name);
     void ChangeState(IEnemyState newState);
+
+    public void SetSpeedMultiplier(float multiplier);
+    public void SetFiringSpeedMultiplier(float multiplier);
 }

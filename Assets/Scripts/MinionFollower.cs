@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MinionFollower : MonoBehaviour
@@ -11,6 +12,11 @@ public class MinionFollower : MonoBehaviour
 
     [Header("Animation")]
     public Animator animator;
+
+    private bool isAttacking = false;
+    [Header("Attack Data")]
+    public float attackDamage = 3f;
+    public float attackTimer = 0.5f;
 
     private Rigidbody2D rb;
 
@@ -58,11 +64,43 @@ public class MinionFollower : MonoBehaviour
             // Stop moving when close
             if (rb != null)
                 rb.linearVelocity = Vector2.zero;
+            if (isAttacking == false)
+            {
+                Attack();
+            }
         }
     }
 
     void OnDisable()
     {
         if (rb != null) rb.linearVelocity = Vector2.zero;
+    }
+
+    void Attack()
+    {
+        StartCoroutine(StartAttack());
+    }
+
+    IEnumerator StartAttack()
+    {
+        isAttacking = true;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        HealthSystem playerHealth = player.GetComponent<HealthSystem>();
+        FreezeTime freezeTime = GameObject.FindGameObjectWithTag("GameController").GetComponent<FreezeTime>();
+
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(attackDamage);
+            if (freezeTime != null)
+            {
+                freezeTime.Freeze(0.05f);
+            }
+        }
+
+        FindObjectOfType<AudioManager>()
+            .PlaySFX(FindObjectOfType<AudioManager>().playerBulletHit);
+        
+        yield return new WaitForSeconds(attackTimer);
+        isAttacking = false;
     }
 }
