@@ -4519,6 +4519,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6188249704482165156, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1731662882}
+    - targetCorrespondingSourceObject: {fileID: 6188249704482165156, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731662886}
   m_SourcePrefab: {fileID: 100100000, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
 --- !u!1 &1731662875 stripped
 GameObject:
@@ -4645,6 +4648,18 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+--- !u!114 &1731662886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731662875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1e61d001e81df46977f7573d69a6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyEffects
 --- !u!1 &1811721658
 GameObject:
   m_ObjectHideFlags: 0

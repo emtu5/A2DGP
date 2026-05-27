@@ -29,6 +29,8 @@ public class LorranStateMachine : MonoBehaviour, IEnemyStateMachine
     private System.Random rng = new System.Random();
     private Rigidbody2D rb;
 
+    private Coroutine flashRed;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -100,6 +102,44 @@ public class LorranStateMachine : MonoBehaviour, IEnemyStateMachine
             if (!enabled) rb.linearVelocity = Vector2.zero;
             rb.isKinematic = !enabled;
         }
+    }
+
+    public void SetSpeedMultiplier(float multiplier)
+    {
+        if (currentState is MovingState movingState)
+            movingState.SetSpeedMultiplier(multiplier);
+    }
+
+    public void SetFiringSpeedMultiplier(float multiplier)
+    {
+        if (currentState is ShootingState shootingState)
+            shootingState.SetFiringSpeedMultiplier(multiplier);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Arrow"))
+        {
+            Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
+            SpriteRenderer enemySprite = GetComponent<SpriteRenderer>();
+            if (enemySprite != null)
+            {
+                if (flashRed != null)
+                {
+                    StopCoroutine(flashRed);
+                }
+                flashRed = StartCoroutine(FlashRed(enemySprite));
+            }
+        }
+    }
+    
+    private IEnumerator FlashRed(SpriteRenderer sprite)
+    {
+        Color originalColor = sprite.color;
+        sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = originalColor;
+        flashRed = null;
     }
 
     public void SetAnimationBool(string name, bool value) => animator?.SetBool(name, value);
