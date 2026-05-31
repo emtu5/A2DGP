@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
-  m_Name: Homing
+  m_Name: Flames
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 2
-  acceleration: 0.2
+  moveSpeed: 5
+  acceleration: 0.1
   startingAngle: 0
-  angleStep: 120
-  firingRate: 0.5
-  numberOfBullets: 1
-  lifetime: 10
-  homingTimer: 3
-  isFadeOut: 0
-  bulletSprite: {fileID: 7729588048284540171, guid: 4b7000e1da0aa52eea3f49f9ffe279f7, type: 3}
+  angleStep: 5
+  firingRate: 0.3
+  numberOfBullets: 20
+  lifetime: 1
+  homingTimer: 0
+  isFadeOut: 1
+  bulletSprite: {fileID: 1098286324429101383, guid: 9ea9e40ebdad07a74bc545fdecd5d0a8, type: 3}
   hitCircleRadius: 0.5

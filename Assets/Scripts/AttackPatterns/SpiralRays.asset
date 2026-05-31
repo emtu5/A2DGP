@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
   m_Name: SpiralRays
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 15
-  acceleration: 0
+  moveSpeed: 1
+  acceleration: 10
   startingAngle: 0
   angleStep: 10
   firingRate: 0.08
   numberOfBullets: 3
-  lifetime: 1
+  lifetime: 3
   homingTimer: 0
   isFadeOut: 0
-  bulletSprite: {fileID: 1098286324429101383, guid: 9ea9e40ebdad07a74bc545fdecd5d0a8, type: 3}
+  bulletSprite: {fileID: 5814950730443077478, guid: a1514fd8ec80f4b7bb69869b8adad4d1, type: 3}
+  hitCircleRadius: 0.5
