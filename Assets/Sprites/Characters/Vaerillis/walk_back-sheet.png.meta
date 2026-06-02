@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c5b12d2894e5d4d40adb38df769e67ff
+guid: 513161c8e1ae7b6b79377fa8e061a73a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1386409049240292262
-    second: Right_Walk_Lorran_0
+      213: -3658931875749276837
+    second: walk_back-sheet_0
   - first:
-      213: -7125849038986169640
-    second: Right_Walk_Lorran_1
+      213: 7056993890050495145
+    second: walk_back-sheet_1
   - first:
-      213: -7417216836255190097
-    second: Right_Walk_Lorran_2
+      213: 7388549652366504959
+    second: walk_back-sheet_2
   - first:
-      213: -3516656245373214529
-    second: Right_Walk_Lorran_3
+      213: -3844944536846883834
+    second: walk_back-sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Walk_Lorran_0
+      name: walk_back-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6abca5d4fa38d3310800000000000000
-      internalID: 1386409049240292262
+      spriteID: b535c9848dcd83dc0800000000000000
+      internalID: -3658931875749276837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_1
+      name: walk_back-sheet_1
       rect:
         serializedVersion: 2
         x: 700
@@ -146,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d2bb2cad06eb1d90800000000000000
-      internalID: -7125849038986169640
+      spriteID: 9a2df8ead8a7fe160800000000000000
+      internalID: 7056993890050495145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_2
+      name: walk_back-sheet_2
       rect:
         serializedVersion: 2
         x: 1400
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa376f4e590c01990800000000000000
-      internalID: -7417216836255190097
+      spriteID: ff334aa33c6698660800000000000000
+      internalID: 7388549652366504959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_3
+      name: walk_back-sheet_3
       rect:
         serializedVersion: 2
         x: 2100
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb0ee51e6c3523fc0800000000000000
-      internalID: -3516656245373214529
+      spriteID: 604a92ca05304aac0800000000000000
+      internalID: -3844944536846883834
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dad21a6fac66f0c0cb5b0d367ae007b2
+    spriteID: 3cb4151c2d0364139b599db82663d2c6
     internalID: 0
     vertices: []
     indices: 
@@ -212,10 +212,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":700.0,"y":800.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Right_Walk_Lorran_0: 1386409049240292262
-      Right_Walk_Lorran_1: -7125849038986169640
-      Right_Walk_Lorran_2: -7417216836255190097
-      Right_Walk_Lorran_3: -3516656245373214529
+      walk_back-sheet_0: -3658931875749276837
+      walk_back-sheet_1: 7056993890050495145
+      walk_back-sheet_2: 7388549652366504959
+      walk_back-sheet_3: -3844944536846883834
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

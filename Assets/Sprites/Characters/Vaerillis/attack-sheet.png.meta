@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c5b12d2894e5d4d40adb38df769e67ff
+guid: cd71804e68fd1d987a7e026f66b7a45e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1386409049240292262
-    second: Right_Walk_Lorran_0
+      213: -6169180410834996232
+    second: attack-sheet_0
   - first:
-      213: -7125849038986169640
-    second: Right_Walk_Lorran_1
+      213: -7276056216514727756
+    second: attack-sheet_1
   - first:
-      213: -7417216836255190097
-    second: Right_Walk_Lorran_2
+      213: -1259462544738904918
+    second: attack-sheet_2
   - first:
-      213: -3516656245373214529
-    second: Right_Walk_Lorran_3
+      213: -2108457652077094341
+    second: attack-sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Walk_Lorran_0
+      name: attack-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6abca5d4fa38d3310800000000000000
-      internalID: 1386409049240292262
+      spriteID: 8f3b1e02a1ba26aa0800000000000000
+      internalID: -6169180410834996232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_1
+      name: attack-sheet_1
       rect:
         serializedVersion: 2
         x: 700
@@ -146,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d2bb2cad06eb1d90800000000000000
-      internalID: -7125849038986169640
+      spriteID: 4b0fdd8db61460b90800000000000000
+      internalID: -7276056216514727756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_2
+      name: attack-sheet_2
       rect:
         serializedVersion: 2
         x: 1400
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa376f4e590c01990800000000000000
-      internalID: -7417216836255190097
+      spriteID: aa49dec0d7d758ee0800000000000000
+      internalID: -1259462544738904918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_3
+      name: attack-sheet_3
       rect:
         serializedVersion: 2
         x: 2100
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb0ee51e6c3523fc0800000000000000
-      internalID: -3516656245373214529
+      spriteID: b3a9dffbfe04db2e0800000000000000
+      internalID: -2108457652077094341
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dad21a6fac66f0c0cb5b0d367ae007b2
+    spriteID: ea42ba06dc28eb2a89264a46a6d0780a
     internalID: 0
     vertices: []
     indices: 
@@ -212,10 +212,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":700.0,"y":800.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Right_Walk_Lorran_0: 1386409049240292262
-      Right_Walk_Lorran_1: -7125849038986169640
-      Right_Walk_Lorran_2: -7417216836255190097
-      Right_Walk_Lorran_3: -3516656245373214529
+      attack-sheet_0: -6169180410834996232
+      attack-sheet_1: -7276056216514727756
+      attack-sheet_2: -1259462544738904918
+      attack-sheet_3: -2108457652077094341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

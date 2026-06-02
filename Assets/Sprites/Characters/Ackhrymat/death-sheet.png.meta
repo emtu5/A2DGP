@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c5b12d2894e5d4d40adb38df769e67ff
+guid: 49b2b324cb98bc5a7980cc22c4830292
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1386409049240292262
-    second: Right_Walk_Lorran_0
+      213: -5580856677607253247
+    second: death-sheet_0
   - first:
-      213: -7125849038986169640
-    second: Right_Walk_Lorran_1
+      213: 3371888295133713447
+    second: death-sheet_1
   - first:
-      213: -7417216836255190097
-    second: Right_Walk_Lorran_2
+      213: 1595386286355089559
+    second: death-sheet_2
   - first:
-      213: -3516656245373214529
-    second: Right_Walk_Lorran_3
+      213: -4383038320959376145
+    second: death-sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Walk_Lorran_0
+      name: death-sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 700
-        height: 800
+        width: 500
+        height: 700
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6abca5d4fa38d3310800000000000000
-      internalID: 1386409049240292262
+      spriteID: 10b5adc9b60dc82b0800000000000000
+      internalID: -5580856677607253247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_1
+      name: death-sheet_1
       rect:
         serializedVersion: 2
-        x: 700
+        x: 500
         y: 0
-        width: 700
-        height: 800
+        width: 500
+        height: 700
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d2bb2cad06eb1d90800000000000000
-      internalID: -7125849038986169640
+      spriteID: 7241eb51a8a5bce20800000000000000
+      internalID: 3371888295133713447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_2
+      name: death-sheet_2
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1000
         y: 0
-        width: 700
-        height: 800
+        width: 500
+        height: 700
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa376f4e590c01990800000000000000
-      internalID: -7417216836255190097
+      spriteID: 79889bdef53f32610800000000000000
+      internalID: 1595386286355089559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Lorran_3
+      name: death-sheet_3
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 1500
         y: 0
-        width: 700
-        height: 800
+        width: 500
+        height: 700
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb0ee51e6c3523fc0800000000000000
-      internalID: -3516656245373214529
+      spriteID: fe4ba429ed15c23c0800000000000000
+      internalID: -4383038320959376145
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dad21a6fac66f0c0cb5b0d367ae007b2
+    spriteID: ec7927db334c02a8e9a6bed2ee8542f5
     internalID: 0
     vertices: []
     indices: 
@@ -210,12 +210,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":700.0,"y":800.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Right_Walk_Lorran_0: 1386409049240292262
-      Right_Walk_Lorran_1: -7125849038986169640
-      Right_Walk_Lorran_2: -7417216836255190097
-      Right_Walk_Lorran_3: -3516656245373214529
+      death-sheet_0: -5580856677607253247
+      death-sheet_1: 3371888295133713447
+      death-sheet_2: 1595386286355089559
+      death-sheet_3: -4383038320959376145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
