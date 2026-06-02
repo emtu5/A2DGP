@@ -5,15 +5,17 @@ public class EnemyEffects : MonoBehaviour
 {
     private Coroutine slowRoutine;
     private Coroutine poisonRoutine;
+    private Coroutine flashRed;
 
     private IEnemyStateMachine stateMachine;
     private HealthSystem health;
+    private SpriteRenderer enemySprite;
 
     void Awake()
     {
         stateMachine = GetComponent(typeof(IEnemyStateMachine)) as IEnemyStateMachine;
-        print(stateMachine);
         health = GetComponent<HealthSystem>();
+        enemySprite = GetComponent<SpriteRenderer>();
     }
 
     public void ApplySlow(float multiplier, float duration)
@@ -63,5 +65,27 @@ public class EnemyEffects : MonoBehaviour
             yield return new WaitForSeconds(tickRate);
             elapsed += tickRate;
         }
+    }
+
+    public void FlashRed()
+    {
+        Camera.main.GetComponent<CameraShake>().Shake(0.15f, 0.08f);
+        if (enemySprite != null)
+        {
+            if (flashRed != null)
+            {
+                StopCoroutine(flashRed);
+            }
+            flashRed = StartCoroutine(FlashRoutine(enemySprite));
+        }
+    }
+
+    private IEnumerator FlashRoutine(SpriteRenderer sprite)
+    {
+        Color originalColor = sprite.color;
+        sprite.color = new Color(1f, 0.5f, 0.5f, originalColor.a);
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = originalColor;
+        flashRed = null;
     }
 }

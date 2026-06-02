@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     private PooledObject pooledObject;
     private GameObject player;
     private SpriteRenderer spriteRenderer;
-    private CircleCollider2D collider;
+    private CircleCollider2D bulletCollider;
 
     [Header("Damage Settings")]
     [SerializeField] private float damage = 10f;
@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
         pooledObject = GetComponent<PooledObject>();
         player = GameObject.FindWithTag("Player");
         spriteRenderer = GetComponent<SpriteRenderer>();
-        collider = GetComponent<CircleCollider2D>();
+        bulletCollider = GetComponent<CircleCollider2D>();
     }
 
     void Update()
@@ -82,7 +82,7 @@ public class Bullet : MonoBehaviour
 
     public void SetRadius(float radius)
     {
-        collider.radius = radius;
+        bulletCollider.radius = radius;
     }
     
     void OnTriggerEnter2D(Collider2D collision)
