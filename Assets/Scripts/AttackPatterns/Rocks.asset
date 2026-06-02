@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
-  m_Name: Homing
+  m_Name: Rocks
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 2
-  acceleration: 0.2
+  moveSpeed: 4
+  acceleration: 0
   startingAngle: 0
-  angleStep: 120
-  firingRate: 0.5
-  numberOfBullets: 1
-  lifetime: 10
-  homingTimer: 3
-  isFadeOut: 0
-  bulletSprite: {fileID: 7729588048284540171, guid: 4b7000e1da0aa52eea3f49f9ffe279f7, type: 3}
-  hitCircleRadius: 0.5
+  angleStep: 15
+  firingRate: 0.2
+  numberOfBullets: 10
+  lifetime: 5
+  homingTimer: 0
+  isFadeOut: 1
+  bulletSprite: {fileID: 3452003437791708593, guid: ba0c8df3f1458cb8c8b18a0a0415b1a5, type: 3}
+  hitCircleRadius: 0.6

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
-  m_Name: Homing
+  m_Name: Stakes
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 2
-  acceleration: 0.2
-  startingAngle: 0
-  angleStep: 120
-  firingRate: 0.5
-  numberOfBullets: 1
-  lifetime: 10
-  homingTimer: 3
+  moveSpeed: 10
+  acceleration: -1
+  startingAngle: 45
+  angleStep: 3
+  firingRate: 0.08
+  numberOfBullets: 4
+  lifetime: 3
+  homingTimer: 0
   isFadeOut: 0
-  bulletSprite: {fileID: 7729588048284540171, guid: 4b7000e1da0aa52eea3f49f9ffe279f7, type: 3}
-  hitCircleRadius: 0.5
+  bulletSprite: {fileID: -8465477110594416671, guid: 831d87f6a895897449d4dd2ff7305913, type: 3}
+  hitCircleRadius: 0.4
