@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
   m_Name: HomingMask
   m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
-  moveSpeed: 7.5
+  moveSpeed: 6
   acceleration: -2
   startingAngle: 0
   angleStep: 180
