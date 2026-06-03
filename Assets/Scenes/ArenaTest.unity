@@ -4040,7 +4040,7 @@ PrefabInstance:
     - target: {fileID: 4762140164092868181, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: 'patterns.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: dc436d61a989414cf9c7c4ec1f27d698, type: 2}
+      objectReference: {fileID: 11400000, guid: 267f8d29e0e8e8f74894abe4a843397f, type: 2}
     - target: {fileID: 5588223453359894772, guid: 1e51d250779033f478e80e8bbc0d09c7, type: 3}
       propertyPath: m_Name
       value: Ack
