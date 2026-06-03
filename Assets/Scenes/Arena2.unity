@@ -2378,6 +2378,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4927499504477307353, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
+      propertyPath: sceneOnDeath
+      value: LoseScene 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6056831514463741083, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4393,10 +4397,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6188249704482165156, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
       insertIndex: 6
       addedObject: {fileID: 1731662877}
+    - targetCorrespondingSourceObject: {fileID: 6188249704482165156, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731662883}
   m_SourcePrefab: {fileID: 100100000, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
 --- !u!1 &1731662875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6188249704482165156, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
+  m_PrefabInstance: {fileID: 1731662874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1731662876 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4590604745353080259, guid: 07a909149d734654d9ded109dfa640cd, type: 3}
   m_PrefabInstance: {fileID: 1731662874}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1731662877
@@ -4456,6 +4468,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63445601f128243439a117e43b375a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
+--- !u!114 &1731662883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731662875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e2639768154d376aba6840533ac553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnim
+  targetHealth: {fileID: 1731662882}
+  animator: {fileID: 1731662876}
+  sceneOnDeath: Win_Scene 2
 --- !u!1 &1811721658
 GameObject:
   m_ObjectHideFlags: 0
