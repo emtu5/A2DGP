@@ -12531,6 +12531,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4927499504477307353, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
+      propertyPath: sceneOnDeath
+      value: LoseSceneTutorial
+      objectReference: {fileID: 0}
     - target: {fileID: 5176646466105987606, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: moveSpeed
       value: 4
