@@ -44,6 +44,9 @@ public class Arrow : MonoBehaviour
         FindObjectOfType<AudioManager>()
             .PlaySFX(FindObjectOfType<AudioManager>().enemyBulletHit);
 
+        EnemyEffects effects = collision.GetComponent<EnemyEffects>();
+        effects?.FlashRed();
+
         if (data.effect != null)
         {
             data.effect.Apply(collision.gameObject, data.damage);

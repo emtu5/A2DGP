@@ -293,7 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: Next Level
 --- !u!222 &580085793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -491,6 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d57503d0396f84292cc9591149d67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
+  sceneToLoad: Arena2
 --- !u!114 &1138983777
 MonoBehaviour:
   m_ObjectHideFlags: 0

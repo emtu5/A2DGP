@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d57503d0396f84292cc9591149d67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
+  sceneToLoad: ArenaTest
 --- !u!1 &1525050374
 GameObject:
   m_ObjectHideFlags: 0
