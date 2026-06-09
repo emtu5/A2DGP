@@ -35,13 +35,17 @@ public class Arrow : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Enemy")) return;
+        Debug.Log(collision);
+        if (!(collision.CompareTag("Enemy") || collision.CompareTag("Minion"))) return;
 
         Debug.Log("Hit enemy with " + data.ammoType);
 
         // PLAYER BULLET HIT SOUND
         FindObjectOfType<AudioManager>()
             .PlaySFX(FindObjectOfType<AudioManager>().enemyBulletHit);
+
+        EnemyEffects effects = collision.GetComponent<EnemyEffects>();
+        effects?.FlashRed();
 
         if (data.effect != null)
         {

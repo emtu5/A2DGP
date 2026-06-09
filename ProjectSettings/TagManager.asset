@@ -8,6 +8,7 @@ TagManager:
   - Audio
   - Arrow
   - Collect
+  - Minion
   layers:
   - Default
   - TransparentFX

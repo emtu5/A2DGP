@@ -21,7 +21,7 @@ public class DashState : IEnemyState
 
         enemy.SetMovementEnabled(true);
         enemy.SetAnimationBool("IsMoving", true);
-        enemy.SetAnimationTrigger("Dash");   // optional – create this trigger in your animator
+        enemy.SetAnimationTrigger("Dash");   
     }
 
     public void Update(IEnemyStateMachine enemy)

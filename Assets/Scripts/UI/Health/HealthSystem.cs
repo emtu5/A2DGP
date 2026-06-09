@@ -60,13 +60,21 @@ public class HealthSystem : MonoBehaviour
 
         void Die()
     {
-        if (CompareTag("Player"))
+        // if (CompareTag("Player"))
+        // {
+        //     SceneManager.LoadScene("LoseScene");   
+        // }
+        // else if (CompareTag("Enemy"))
+        // {
+        //     SceneManager.LoadScene("Win_Scene");   
+        // }
+        // else if (CompareTag("Minion"))
+        // {
+        //     Destroy(gameObject);
+        // }
+        if (CompareTag("Minion"))
         {
-            SceneManager.LoadScene("LoseScene");   
-        }
-        else if (CompareTag("Enemy"))
-        {
-            SceneManager.LoadScene("Win_Scene");   
+            Destroy(gameObject);
         }
     }
 }

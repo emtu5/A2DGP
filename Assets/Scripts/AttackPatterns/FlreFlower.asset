@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe2bb9b02d4453c8a26c5ff90951285, type: 3}
+  m_Name: FlreFlower
+  m_EditorClassIdentifier: Assembly-CSharp::AttackPattern
+  moveSpeed: 20
+  acceleration: -20
+  startingAngle: 45
+  angleStep: 5
+  firingRate: 0.08
+  numberOfBullets: 4
+  lifetime: 2
+  homingTimer: 0
+  isFadeOut: 0
+  bulletSprite: {fileID: 1098286324429101383, guid: 9ea9e40ebdad07a74bc545fdecd5d0a8, type: 3}
+  hitCircleRadius: 0.45

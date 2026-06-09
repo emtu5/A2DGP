@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 40254408945898134}
   - component: {fileID: 1352362818237323977}
   - component: {fileID: 8721382576428003310}
+  - component: {fileID: 4927499504477307353}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -415,6 +416,21 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+--- !u!114 &4927499504477307353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056831514463741083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e2639768154d376aba6840533ac553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnim
+  targetHealth: {fileID: 8721382576428003310}
+  animator: {fileID: 3758344394868445164}
+  sceneOnDeath: LoseScene
 --- !u!1 &7625857964551362416
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +510,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4347532159779508366, guid: 151af51ea068e9e428d5337c39101898, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
