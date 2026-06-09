@@ -13,6 +13,7 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
+        if (PauseManager.Instance.isPaused) return;
         if (Input.GetButtonDown("Fire1"))
         {
             Fire();

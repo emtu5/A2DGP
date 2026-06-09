@@ -8,7 +8,7 @@ public class PauseManager : MonoBehaviour
     public static event Action OnPause;
     public static event Action OnResume;
 
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     void Awake()
     {
