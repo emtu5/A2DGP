@@ -14,6 +14,10 @@ public class HealthSystem : MonoBehaviour
     [Header("Debug Keys")]
     [SerializeField] private KeyCode damageKey = KeyCode.H;
 
+    [Header("VFX")]
+    [SerializeField] private GameObject hitVFXPrefab;
+    [SerializeField] private Transform vfxSpawnPoint;
+
     public event Action<float, float> OnHealthChanged;
 
     private void Start()
@@ -35,11 +39,12 @@ public class HealthSystem : MonoBehaviour
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
-        
+        //HIT VFX
+        SpawnHitVFX();
 
         NotifyHealthChanged();
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -77,5 +82,14 @@ public class HealthSystem : MonoBehaviour
             TutorialManager.Instance.MinionKilled();
             Destroy(gameObject);
         }
+    }
+
+    private void SpawnHitVFX()
+    {
+        if (hitVFXPrefab == null) return;
+
+        Vector3 spawnPos = vfxSpawnPoint != null ? vfxSpawnPoint.position : transform.position;
+
+        Instantiate(hitVFXPrefab, spawnPos, Quaternion.identity);
     }
 }
