@@ -24,6 +24,7 @@ public class CameraFollowSimplified : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (PauseManager.Instance.isPaused) return;
         if (target == null) return;
 
         Vector3 desiredPosition = Vector3.Lerp(transform.position + recoil.CurrentRecoilOffset, target.position, followSpeed * Time.deltaTime);
