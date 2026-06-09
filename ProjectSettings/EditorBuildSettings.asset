@@ -41,6 +41,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScene 3.unity
     guid: 8266e55c8c4f77b8cbf49b82c8b63af6
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: ac7bece71ac4da54b853e467767adc85
+  - enabled: 1
+    path: Assets/Scenes/LoseSceneTutorial.unity
+    guid: 265f5a0a39255f243aa7e7a2c657dbbc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

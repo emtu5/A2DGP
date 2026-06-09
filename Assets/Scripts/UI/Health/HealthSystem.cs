@@ -79,6 +79,7 @@ public class HealthSystem : MonoBehaviour
         // }
         if (CompareTag("Minion"))
         {
+            TutorialManager.Instance.MinionKilled();
             Destroy(gameObject);
         }
     }
