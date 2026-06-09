@@ -22,6 +22,7 @@ public class AttackManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+
         if (timer >= swapFrequency)
         {
             bulletSpawner.SetAttackPattern(attackBank.GetRandomPattern());
