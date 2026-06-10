@@ -139,9 +139,10 @@ GameObject:
   m_Component:
   - component: {fileID: 288040412386992496}
   - component: {fileID: 801849022450478127}
+  - component: {fileID: 8811079406227295444}
   m_Layer: 0
   m_Name: Audio Manager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,6 +186,22 @@ MonoBehaviour:
   enemyTeleportSound: {fileID: 8300000, guid: 83c2eb0ac66f9bc4f8d7fec9bff7d4a6, type: 3}
   playerBulletHit: {fileID: 8300000, guid: 213f422be214b0e4dabec19d3a81e445, type: 3}
   enemyBulletHit: {fileID: 8300000, guid: a695efacbd015c24c94db0b50219e36e, type: 3}
+--- !u!114 &8811079406227295444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436843824352568885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4c06ac38e003d45965e952f4b2c7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VolumeSettings
+  audioMixer: {fileID: 24100000, guid: 772fea2b837264a43a11c6e0d971c226, type: 2}
+  soundSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
+  SFXSlider: {fileID: 0}
 --- !u!1 &8878927763531314420
 GameObject:
   m_ObjectHideFlags: 0

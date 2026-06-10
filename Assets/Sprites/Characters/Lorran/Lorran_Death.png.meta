@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 49b2b324cb98bc5a7980cc22c4830292
+guid: fb06003710e05714f9c9b05179de9cc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5580856677607253247
-    second: death-sheet_0
+      213: -2346193235133680988
+    second: Lorran_Death_0
   - first:
-      213: 3371888295133713447
-    second: death-sheet_1
+      213: 5958692253339133428
+    second: Lorran_Death_1
   - first:
-      213: 1595386286355089559
-    second: death-sheet_2
-  - first:
-      213: -4383038320959376145
-    second: death-sheet_3
+      213: 5977963678362203486
+    second: Lorran_Death_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 700
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death-sheet_0
+      name: Lorran_Death_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 700
+        x: 179
+        y: 13
+        width: 337
+        height: 658
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10b5adc9b60dc82b0800000000000000
-      internalID: -5580856677607253247
+      spriteID: 4a2be6deea5a07fd0800000000000000
+      internalID: -2346193235133680988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death-sheet_1
+      name: Lorran_Death_1
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 500
-        height: 700
+        x: 786
+        y: 10
+        width: 480
+        height: 465
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7241eb51a8a5bce20800000000000000
-      internalID: 3371888295133713447
+      spriteID: 4f5a62ea80781b250800000000000000
+      internalID: 5958692253339133428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death-sheet_2
+      name: Lorran_Death_2
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 1530
         y: 0
-        width: 500
-        height: 700
+        width: 473
+        height: 193
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79889bdef53f32610800000000000000
-      internalID: 1595386286355089559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death-sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 500
-        height: 700
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe4ba429ed15c23c0800000000000000
-      internalID: -4383038320959376145
+      spriteID: e5577f8fa4ef5f250800000000000000
+      internalID: 5977963678362203486
       vertices: []
       indices: 
       edges: []
@@ -200,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ec7927db334c02a8e9a6bed2ee8542f5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -208,14 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      death-sheet_0: -5580856677607253247
-      death-sheet_1: 3371888295133713447
-      death-sheet_2: 1595386286355089559
-      death-sheet_3: -4383038320959376145
+      Lorran_Death_0: -2346193235133680988
+      Lorran_Death_1: 5958692253339133428
+      Lorran_Death_2: 5977963678362203486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

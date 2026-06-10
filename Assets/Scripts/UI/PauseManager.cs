@@ -23,6 +23,17 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (isPaused)
+                ResumeGame();
+            else
+                PauseGame();
+        }
+    }
+
     public void PauseGame()
     {
         if (isPaused) return;
