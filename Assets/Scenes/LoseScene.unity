@@ -419,6 +419,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   sceneToLoad: ArenaTest
+--- !u!1 &1440758201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1468368606171470654, guid: b0733642292d244429c397364e97e089, type: 3}
+  m_PrefabInstance: {fileID: 1663150311104851467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1440758203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440758201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1001 &1537707551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,6 +494,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7cf000c86fe68648824204e41833d03, type: 3}
+--- !u!1 &1699180230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2723981965407127762, guid: b0733642292d244429c397364e97e089, type: 3}
+  m_PrefabInstance: {fileID: 1663150311104851467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1699180232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699180230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &1988596267
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +934,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2723981965407127762, guid: b0733642292d244429c397364e97e089, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1699180232}
+    - targetCorrespondingSourceObject: {fileID: 1468368606171470654, guid: b0733642292d244429c397364e97e089, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1440758203}
   m_SourcePrefab: {fileID: 100100000, guid: b0733642292d244429c397364e97e089, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
