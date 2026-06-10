@@ -4439,7 +4439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a59cf501bf394eaa6cb4425497e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1106375543}
 --- !u!1 &1120306707
 GameObject:
   m_ObjectHideFlags: 0
@@ -12759,6 +12759,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4927499504477307353, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
+      propertyPath: fadeEffect
+      value: 
+      objectReference: {fileID: 1106375545}
     - target: {fileID: 4927499504477307353, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: sceneOnDeath
       value: LoseSceneTutorial

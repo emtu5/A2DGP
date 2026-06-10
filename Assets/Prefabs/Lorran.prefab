@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4248723460877226653}
   - component: {fileID: 7014505462523247310}
   - component: {fileID: 3340155032227397873}
+  - component: {fileID: 4821858437870533350}
   m_Layer: 0
   m_Name: Lorran
   m_TagString: Enemy
@@ -236,6 +237,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1e61d001e81df46977f7573d69a6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyEffects
+--- !u!114 &4821858437870533350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188249704482165156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e2639768154d376aba6840533ac553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnim
+  targetHealth: {fileID: 7014505462523247310}
+  animator: {fileID: 4590604745353080259}
+  sceneOnDeath: Win_Scene2
 --- !u!1 &7678581213412697548
 GameObject:
   m_ObjectHideFlags: 0
