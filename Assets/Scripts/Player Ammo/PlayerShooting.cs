@@ -51,6 +51,10 @@ public class PlayerShooting : MonoBehaviour
             Instantiate(shootVFXPrefab, muzzlePoint.position, rot);
         }
 
+        // SFX
+        FindObjectOfType<AudioManager>()
+            .PlaySFX(FindObjectOfType<AudioManager>().playerShootingArrow);
+        
         // shooting logic
         playerAmmo.Shoot(dir);
     }

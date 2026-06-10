@@ -186,6 +186,7 @@ MonoBehaviour:
   enemyTeleportSound: {fileID: 8300000, guid: 83c2eb0ac66f9bc4f8d7fec9bff7d4a6, type: 3}
   playerBulletHit: {fileID: 8300000, guid: 213f422be214b0e4dabec19d3a81e445, type: 3}
   enemyBulletHit: {fileID: 8300000, guid: a695efacbd015c24c94db0b50219e36e, type: 3}
+  playerShootingArrow: {fileID: 8300000, guid: 83a957b818d6c9746a1a0cb67a7f89cb, type: 3}
 --- !u!114 &8811079406227295444
 MonoBehaviour:
   m_ObjectHideFlags: 0

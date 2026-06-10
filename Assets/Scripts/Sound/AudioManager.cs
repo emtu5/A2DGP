@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip enemyTeleportSound;
     public AudioClip playerBulletHit;
     public AudioClip enemyBulletHit;
+    public AudioClip playerShootingArrow;
 
     private void Start()
     {

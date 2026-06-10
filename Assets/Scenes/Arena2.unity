@@ -995,8 +995,6 @@ MonoBehaviour:
   damageKey: 104
   hitVFXPrefab: {fileID: 0}
   vfxSpawnPoint: {fileID: 0}
-  hitVFXPrefab: {fileID: 0}
-  vfxSpawnPoint: {fileID: 0}
 --- !u!114 &899265245 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8721382576428003310, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
@@ -1355,9 +1353,21 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4929506501170889491, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 1798502667}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5425082249900337012, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1560975364}
+    - targetCorrespondingSourceObject: {fileID: 6881758425669470519, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 20244011}
+    - targetCorrespondingSourceObject: {fileID: 3702772285210574566, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 651574131}
+    - targetCorrespondingSourceObject: {fileID: 5754445986991037696, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1690940016}
   m_SourcePrefab: {fileID: 100100000, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
 --- !u!114 &955293206 stripped
 MonoBehaviour:
