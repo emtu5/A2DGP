@@ -5735,6 +5735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   isPaused: 0
+  isPaused: 0
 --- !u!1 &1498038813
 GameObject:
   m_ObjectHideFlags: 0

@@ -119,6 +119,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &20244009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6881758425669470519, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 955293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &20244011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20244009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &54963769
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +681,24 @@ Transform:
   - {fileID: 727197136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &651574129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3702772285210574566, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 955293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &651574131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651574129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &696964871
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +993,8 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+  hitVFXPrefab: {fileID: 0}
+  vfxSpawnPoint: {fileID: 0}
   hitVFXPrefab: {fileID: 0}
   vfxSpawnPoint: {fileID: 0}
 --- !u!114 &899265245 stripped
@@ -2020,6 +2058,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 873786982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1560975362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5425082249900337012, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 955293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1560975364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560975362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &1657407858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2251,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 873786982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1690940014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5754445986991037696, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 955293205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690940016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690940014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1001 &1731662874
 PrefabInstance:
   m_ObjectHideFlags: 0

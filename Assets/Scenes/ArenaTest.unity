@@ -4374,6 +4374,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1377040174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1549112910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6881758425669470519, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 8527808370091156294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1549112915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549112910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &1550531209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,6 +4756,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &1654760036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5754445986991037696, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 8527808370091156294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654760038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654760036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f0413fd796ff4d9100a5fd28b6b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverButton
+  hoverScale: 1.1
 --- !u!1 &1696621960
 GameObject:
   m_ObjectHideFlags: 0
