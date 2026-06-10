@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 45a6c7e016aad01499a813f3baa69ac7
+  - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: 224bbafbc047ad74cb0869d48198e966
   - enabled: 0
     path: Assets/Scenes/Antonia.unity
     guid: d2e785861a7dcef43b93fce149ed2348
