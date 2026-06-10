@@ -2093,6 +2093,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91bf4571d8c2619b795d3b39b8820ef4, type: 3}
+--- !u!114 &985158731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3298941683440771106, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 1428704744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e5039d79adc0e4bb1104aebedd66eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoUI
 --- !u!1 &1069802242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,7 +3619,7 @@ PrefabInstance:
     - target: {fileID: 1352362818237323977, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: ammoUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 985158731}
     - target: {fileID: 1352362818237323977, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: ammoLibrary
       value: 
@@ -3678,6 +3689,8 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+  hitVFXPrefab: {fileID: 0}
+  vfxSpawnPoint: {fileID: 1471596441}
 --- !u!1001 &1482145546
 PrefabInstance:
   m_ObjectHideFlags: 0

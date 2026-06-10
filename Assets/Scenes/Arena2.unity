@@ -1014,7 +1014,7 @@ PrefabInstance:
     - target: {fileID: 1352362818237323977, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: ammoUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1021011726}
     - target: {fileID: 1352362818237323977, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
       propertyPath: ammoLibrary
       value: 
@@ -1073,6 +1073,8 @@ MonoBehaviour:
   currentHealth: 0
   damageAmount: 10
   damageKey: 104
+  hitVFXPrefab: {fileID: 0}
+  vfxSpawnPoint: {fileID: 0}
 --- !u!114 &899265245 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8721382576428003310, guid: 1933c8ae105608f4a9d3ddf2d00b17be, type: 3}
@@ -1435,6 +1437,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 587226681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1021011726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3298941683440771106, guid: 677c2ef6259d8c047b3d52a263e608ac, type: 3}
+  m_PrefabInstance: {fileID: 955293205}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e5039d79adc0e4bb1104aebedd66eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoUI
 --- !u!1001 &1193934632
 PrefabInstance:
   m_ObjectHideFlags: 0
